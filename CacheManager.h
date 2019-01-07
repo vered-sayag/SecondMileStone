@@ -5,14 +5,11 @@
 #ifndef SECONDMIILESTONE_CACHEMANAGER_H
 #define SECONDMIILESTONE_CACHEMANAGER_H
 
-
-#include "Problem.h"
-#include "Solution.h"
-
 class CacheManager {
-    bool isExist(Problem p);
-    void pushSolution(Solution s, Problem p);
-    Solution popSolution(Problem p);
+public:
+    virtual bool isExist(string p);
+    virtual void pushSolution(string s, string p);
+    virtual string popSolution(string p);
 };
 
 

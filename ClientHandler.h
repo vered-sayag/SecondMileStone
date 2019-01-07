@@ -10,7 +10,10 @@
 using namespace std;
 
 class ClientHandler {
-    void handleClient(istream in, ostream out);
+
+
+public:
+    virtual void handleClient(istream in, ostream out);
 };
 
 

@@ -5,10 +5,10 @@
 #ifndef SECONDMIILESTONE_SOLVER_H
 #define SECONDMIILESTONE_SOLVER_H
 
-
+template <class S, class P>
 class Solver {
-    Solution solve(Problem p);
+public:
+    virtual S solve(P p);
 };
-
 
 #endif //SECONDMIILESTONE_SOLVER_H

@@ -8,8 +8,10 @@
 
 #include "CacheManager.h"
 
-class FileCacheManager : CacheManager {
-
+class FileCacheManager : public CacheManager {
+    virtual bool isExist(string p);
+    virtual void pushSolution(string s, string p);
+    virtual string popSolution(string p);
 };
 
 

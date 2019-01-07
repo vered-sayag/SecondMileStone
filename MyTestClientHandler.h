@@ -7,9 +7,13 @@
 
 
 #include "ClientHandler.h"
+#include "Solver.h"
 
-class MyTestClientHandler : ClientHandler {
+class MyTestClientHandler : public ClientHandler {
+    Solver solver;
 
+public:
+    MyTestClientHandler(Solver s) : solver(s) {}
 };
 
 
