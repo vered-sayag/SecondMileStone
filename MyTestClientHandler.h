@@ -4,7 +4,7 @@
 
 #ifndef SECONDMIILESTONE_MYTESTCLIENTHANDLER_H
 #define SECONDMIILESTONE_MYTESTCLIENTHANDLER_H
-
+#define END_MESSAGE "end"
 
 #include <sys/socket.h>
 #include <unistd.h>
@@ -17,6 +17,7 @@ class MyTestClientHandler : public ClientHandler {
     CacheManager* cacheManager;
 public:
     MyTestClientHandler(Solver<string,string>* s,CacheManager* c) : solver(s),cacheManager(c) {}
+
     virtual void handleClient(int socket){
         string problem ="";
         string ans;
@@ -34,7 +35,7 @@ public:
                     {
                         if (problem.length() > 0)
                         {
-                          if(!problem.compare("end") ){
+                          if(!problem.compare(END_MESSAGE) ){
                               close(socket);
                               return;
                           }
@@ -54,7 +55,6 @@ public:
                                 return;
                             }
 
-                            //TODO send ans
 
                             problem = "";
                         }

@@ -3,12 +3,14 @@
 //
 
 
-
+#include <pthread.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <strings.h>
 #include <unistd.h>
 #include "MySerialServer.h"
+#include <stdio.h>
+
 
 void MySerialServer::open(int port) {
     TCPDataServer *params;
@@ -59,9 +61,10 @@ void* MySerialServer::thread_OpenDataServer(void* arg) {
 
     //start listening for the clients using the main socket
     listen(socketFd,1);
+    clilen = sizeof(cli_addr);
 
     while (!*params->shouldStop) {
-        clilen = sizeof(cli_addr);
+
         //accept actual connection from the client
         newsockfd = accept(socketFd, (struct sockaddr *) &cli_addr, (socklen_t *) &clilen);
 

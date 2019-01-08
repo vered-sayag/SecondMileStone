@@ -15,9 +15,9 @@ class MySerialServer : public Server {
 public:
     MySerialServer(ClientHandler* c) : Server(c){}
 
-    virtual void open(int port);
+    void open(int port);
 
-    virtual void stop();
+     void stop();
 
     static void* thread_OpenDataServer(void* arg);
 

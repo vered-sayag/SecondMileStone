@@ -31,7 +31,10 @@ bool FileCacheManager:: isExist(string p){
      myfile.open(myFileName,std::ios::app);
      if (myfile.is_open()) {
          myfile << p+"\n"+s+"\n";
+     }else{
+         throw invalid_argument("not good file");
      }
+     myfile.close();
 
 }
  string FileCacheManager :: popSolution(string p){

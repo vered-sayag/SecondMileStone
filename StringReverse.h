@@ -18,6 +18,8 @@ public:
         // corners
         for (int i = 0; i < n / 2; i++)
             swap(p[i], p[n - i - 1]);
+
+        return p;
     }
 
 };

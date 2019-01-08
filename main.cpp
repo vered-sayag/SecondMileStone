@@ -1,13 +1,19 @@
 #include <iostream>
+#include <chrono>
+#include <thread>
 #include "FileCacheManager.h"
-int main() {
+#include "server_side.h"
+#include "MySerialServer.h"
+#include "MyTestClientHandler.h"
+#include "StringReverse.h"
 
-    FileCacheManager fileCacheManager("test.txt");
-    if(!fileCacheManager.isExist("the anser of the universe")){
-        fileCacheManager.pushSolution("the anser of the universe","42");
-    }else
-    {
-      cout<<fileCacheManager.popSolution("the anser of the universe") <<endl;
-    }
+using namespace server_side;
+
+int main() {
+    Server *server = new MySerialServer(new MyTestClientHandler(new StringReverse, new FileCacheManager("test2.txt")));
+    server->open(5400);
+    this_thread::sleep_for(chrono::milliseconds(100000));
+    server->stop();
+
     return 0;
 }
