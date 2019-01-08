@@ -42,9 +42,6 @@ void* MySerialServer::thread_OpenDataServer(void* arg) {
         exit(1);
     }
 
-    //TODO: how to close the socket
-//    params->data->addSocket(socketFd);
-
     //Initialize socket structure
     bzero((char *) &serv_addr, sizeof(serv_addr));
 
