@@ -3,19 +3,30 @@
 //
 
 
-#include <pthread>
+
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <strings.h>
+#include <unistd.h>
 #include "MySerialServer.h"
 
 void MySerialServer::open(int port) {
-
+    TCPDataServer *params;
+    params = new TCPDataServer();
+    params->port = port;
+    params->client= clientHandler;
+    params->shouldStop = & shouldStop;
+    pthread_t trid;
+    pthread_create(&trid, nullptr, thread_OpenDataServer, params);
 }
 
 void MySerialServer::stop() {
+    shouldStop=1;
 
 }
 
 void* MySerialServer::thread_OpenDataServer(void* arg) {
-    struct TCPDataServer* params = (struct TCPDataServer*) arg;
+    TCPDataServer* params = (TCPDataServer*) arg;
 
     int socketFd; // main socket fileDescriptor
     int newsockfd; // new socket fileDescriptor
@@ -51,48 +62,22 @@ void* MySerialServer::thread_OpenDataServer(void* arg) {
 
     //start listening for the clients using the main socket
     listen(socketFd,1);
-    clilen = sizeof(cli_addr);
+
+    while (!*params->shouldStop) {
+        clilen = sizeof(cli_addr);
+        //accept actual connection from the client
+        newsockfd = accept(socketFd, (struct sockaddr *) &cli_addr, (socklen_t *) &clilen);
 
 
-    //accept actual connection from the client
-    newsockfd = accept(socketFd, (struct sockaddr*)&cli_addr, (socklen_t*)&clilen);
+        //if connections with the client failed
+        if (newsockfd < 0) {
+            perror("ERROR on accept");
+            exit(1);
+        }
 
-
-    //if connections with the client failed
-    if (newsockfd < 0) {
-        perror("ERROR on accept");
-        exit(1);
+        params->client->handleClient(newsockfd);
     }
 
-
-    string dataStr;
-
-    while(true)
-    {
-        char buf[1024];
-        int numBytesRead = recv(newsockfd, buf, sizeof(buf), 0);
-
-
-        if (numBytesRead > 0)
-        {
-            for (int i=0; i<numBytesRead; i++)
-            {
-                char c = buf[i];
-                if (c == '\n')
-                {
-                    if (dataStr.length() > 0)
-                    {
-                        //TODO: call to client handler
-                    }
-                }
-                else dataStr += c;
-            }
-        }
-        else
-        {
-            break;
-        }
-    }
-
+    close(socketFd);
     return nullptr;
 }

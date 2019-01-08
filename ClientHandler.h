@@ -11,9 +11,8 @@ using namespace std;
 
 class ClientHandler {
 
-
 public:
-    virtual void handleClient(istream in, ostream out);
+    virtual void handleClient(int socket)=0;
 };
 
 

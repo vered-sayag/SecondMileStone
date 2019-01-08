@@ -5,10 +5,14 @@
 #ifndef SECONDMIILESTONE_FILECACHEMANAGER_H
 #define SECONDMIILESTONE_FILECACHEMANAGER_H
 
-
+#include <map>
 #include "CacheManager.h"
 
 class FileCacheManager : public CacheManager {
+    map<string,string> problemSolutionMap;
+    string myFileName;
+public:
+    FileCacheManager(string fileName);
     virtual bool isExist(string p);
     virtual void pushSolution(string s, string p);
     virtual string popSolution(string p);

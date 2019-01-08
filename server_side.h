@@ -10,12 +10,13 @@
 
 namespace server_side{
     class Server {
-        ClientHandler clientHandler;
+    protected:
+        ClientHandler *clientHandler;
     public:
-        Server(ClientHandler c) : clientHandler(c) {
+        Server(ClientHandler* c) : clientHandler(c) {
         }
-        virtual void open(int port);
-        virtual void stop();
+        virtual void open(int port)=0;
+        virtual void stop()=0;
 
         virtual ~Server() {
             delete (clientHandler);

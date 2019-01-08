@@ -11,8 +11,9 @@
 using namespace server_side;
 
 class MySerialServer : public Server {
+    bool shouldStop=0;
 public:
-    MySerialServer(ClientHandler c) : Server(c);
+    MySerialServer(ClientHandler* c) : Server(c){}
 
     virtual void open(int port);
 
@@ -24,6 +25,7 @@ public:
 
 typedef struct {
     int port;
+    bool * shouldStop;
     ClientHandler* client;
 } TCPDataServer;
 

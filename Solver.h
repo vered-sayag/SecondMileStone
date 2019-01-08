@@ -8,7 +8,7 @@
 template <class S, class P>
 class Solver {
 public:
-    virtual S solve(P p);
+    virtual S solve(P p)=0;
 };
 
 #endif //SECONDMIILESTONE_SOLVER_H

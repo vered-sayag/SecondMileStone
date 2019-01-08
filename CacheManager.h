@@ -5,11 +5,13 @@
 #ifndef SECONDMIILESTONE_CACHEMANAGER_H
 #define SECONDMIILESTONE_CACHEMANAGER_H
 
+#include <string>
+using namespace std;
 class CacheManager {
 public:
-    virtual bool isExist(string p);
-    virtual void pushSolution(string s, string p);
-    virtual string popSolution(string p);
+    virtual bool isExist(string p) =0;
+    virtual void pushSolution(string s, string p)=0;
+    virtual string popSolution(string p)=0;
 };
 
 
