@@ -12,7 +12,7 @@
 #include <stdio.h>
 
 
-void MySerialServer::open(int port) {
+void server_side::MySerialServer::open(int port) {
     TCPDataServer *params;
     params = new TCPDataServer();
     params->port = port;
@@ -22,7 +22,7 @@ void MySerialServer::open(int port) {
     pthread_create(&trid, nullptr, thread_OpenDataServer, params);
 }
 
-void MySerialServer::stop() {
+void server_side::MySerialServer::stop() {
     shouldStop=1;
 
 }

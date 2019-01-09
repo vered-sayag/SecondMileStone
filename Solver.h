@@ -4,11 +4,12 @@
 
 #ifndef SECONDMIILESTONE_SOLVER_H
 #define SECONDMIILESTONE_SOLVER_H
-
-template <class S, class P>
-class Solver {
-public:
-    virtual S solve(P p)=0;
-};
+namespace server_side {
+    template<class S, class P>
+    class Solver {
+    public:
+        virtual S solve(P p) = 0;
+    };
+}
 
 #endif //SECONDMIILESTONE_SOLVER_H

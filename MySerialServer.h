@@ -5,30 +5,31 @@
 #ifndef SECONDMIILESTONE_MYSERIALSERVER_H
 #define SECONDMIILESTONE_MYSERIALSERVER_H
 
-#include "server_side.h"
+#include "Server.h"
 #include "ClientHandler.h"
 
 using namespace server_side;
+namespace server_side {
+    class MySerialServer : public Server {
+        bool shouldStop = 0;
+    public:
+        MySerialServer(ClientHandler *c) : Server(c) {}
 
-class MySerialServer : public Server {
-    bool shouldStop=0;
-public:
-    MySerialServer(ClientHandler* c) : Server(c){}
+        void open(int port);
 
-    void open(int port);
+        void stop();
 
-     void stop();
+        static void *thread_OpenDataServer(void *arg);
 
-    static void* thread_OpenDataServer(void* arg);
+    };
 
-};
+    typedef struct {
+        int port;
+        bool *shouldStop;
+        ClientHandler *client;
+    } TCPDataServer;
 
-typedef struct {
-    int port;
-    bool * shouldStop;
-    ClientHandler* client;
-} TCPDataServer;
-
+}
 
 
 #endif //SECONDMIILESTONE_MYSERIALSERVER_H

@@ -3,6 +3,6 @@ project(SecondMiilestone)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(SecondMiilestone main.cpp server_side.cpp server_side.h ClientHandler.cpp ClientHandler.h MyTestClientHandler.cpp MyTestClientHandler.h Solver.cpp Solver.h MySerialServer.cpp MySerialServer.h CacheManager.cpp CacheManager.h FileCacheManager.cpp FileCacheManager.h StringReverse.h)
+add_executable(SecondMiilestone main.cpp Server.h ClientHandler.h MyTestClientHandler.cpp MyTestClientHandler.h Solver.h MySerialServer.cpp MySerialServer.h CacheManager.h FileCacheManager.cpp FileCacheManager.h StringReverse.h Main.h)
 
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")

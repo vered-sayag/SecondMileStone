@@ -9,11 +9,13 @@
 
 using namespace std;
 
-class ClientHandler {
+namespace server_side {
+    class ClientHandler {
 
-public:
-    virtual void handleClient(int socket)=0;
-};
+    public:
+        virtual void handleClient(int socket) = 0;
+    };
+}
 
 
 #endif //SECONDMIILESTONE_CLIENTHANDLER_H

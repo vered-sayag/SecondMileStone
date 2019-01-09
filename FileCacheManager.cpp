@@ -6,7 +6,7 @@
 #include "FileCacheManager.h"
 
 
-FileCacheManager::FileCacheManager(string fileName){
+server_side::FileCacheManager::FileCacheManager(string fileName){
     string problem, solution;
     myFileName=fileName;
     ifstream myfile(fileName);
@@ -21,11 +21,11 @@ FileCacheManager::FileCacheManager(string fileName){
         myfile.close();
     }
 }
-bool FileCacheManager:: isExist(string p){
+bool server_side::FileCacheManager:: isExist(string p){
     map<string, string>::iterator it = problemSolutionMap.find(p);
     return it != problemSolutionMap.end();
 }
- void FileCacheManager:: pushSolution(string p, string s){
+ void server_side::FileCacheManager:: pushSolution(string p, string s){
      problemSolutionMap[p]=s;
      ofstream myfile;
      myfile.open(myFileName,std::ios::app);
@@ -37,7 +37,7 @@ bool FileCacheManager:: isExist(string p){
      myfile.close();
 
 }
- string FileCacheManager :: popSolution(string p){
+ string server_side::FileCacheManager :: popSolution(string p){
      if(isExist(p)) {
          return  problemSolutionMap[p];
      }else{
