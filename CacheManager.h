@@ -15,6 +15,7 @@ namespace server_side {
         virtual void pushSolution(string s, string p) = 0;
 
         virtual string popSolution(string p) = 0;
+        virtual ~CacheManager(){}
     };
 }
 

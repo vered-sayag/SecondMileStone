@@ -14,6 +14,7 @@ namespace server_side {
 
     public:
         virtual void handleClient(int socket) = 0;
+        virtual ~ClientHandler(){}
     };
 }
 

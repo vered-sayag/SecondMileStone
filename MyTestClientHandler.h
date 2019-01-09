@@ -19,6 +19,11 @@ namespace server_side {
         MyTestClientHandler(Solver<string, string> *s, CacheManager *c) : solver(s), cacheManager(c) {}
 
         virtual void handleClient(int socket) ;
+
+        ~MyTestClientHandler(){
+            delete (solver);
+            delete (cacheManager);
+        }
     };
 
 }

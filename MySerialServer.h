@@ -11,6 +11,7 @@
 using namespace server_side;
 namespace server_side {
     class MySerialServer : public Server {
+        pthread_t trid;
         bool shouldStop = 0;
     public:
         MySerialServer(ClientHandler *c) : Server(c) {}

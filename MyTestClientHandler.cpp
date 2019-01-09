@@ -41,6 +41,9 @@ void server_side::MyTestClientHandler::handleClient(int socket) {
                 } else problem += c;
             }
         } else {
+            if (errno == EWOULDBLOCK) {
+                continue;
+            }
             close(socket);
             return;
         }

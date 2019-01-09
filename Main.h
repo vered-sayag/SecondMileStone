@@ -25,8 +25,9 @@ namespace server_side {
                     Server *server = new MySerialServer(
                             new MyTestClientHandler(new StringReverse, new FileCacheManager("test2.txt")));
                     server->open(atoi(args[1]));
-                    this_thread::sleep_for(chrono::milliseconds(100000));
+                    this_thread::sleep_for(chrono::milliseconds(10000));
                     server->stop();
+                    delete (server);
                 } else {
                     throw invalid_argument("Invalid main arguments");
                 }

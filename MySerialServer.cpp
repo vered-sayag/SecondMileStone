@@ -16,19 +16,19 @@ void server_side::MySerialServer::open(int port) {
     TCPDataServer *params;
     params = new TCPDataServer();
     params->port = port;
-    params->client= clientHandler;
-    params->shouldStop = & shouldStop;
-    pthread_t trid;
+    params->client = clientHandler;
+    params->shouldStop = &shouldStop;
     pthread_create(&trid, nullptr, thread_OpenDataServer, params);
 }
 
 void server_side::MySerialServer::stop() {
-    shouldStop=1;
+    shouldStop = 1;
+    pthread_join(trid, nullptr);
 
 }
 
-void* MySerialServer::thread_OpenDataServer(void* arg) {
-    TCPDataServer* params = (TCPDataServer*) arg;
+void *MySerialServer::thread_OpenDataServer(void *arg) {
+    TCPDataServer *params = (TCPDataServer *) arg;
 
     int socketFd; // main socket fileDescriptor
     int newsockfd; // new socket fileDescriptor
@@ -60,24 +60,32 @@ void* MySerialServer::thread_OpenDataServer(void* arg) {
 
 
     //start listening for the clients using the main socket
-    listen(socketFd,1);
+    listen(socketFd, 1);
     clilen = sizeof(cli_addr);
 
-    while (!*params->shouldStop) {
 
+    while (!*params->shouldStop) {
+        timeval timeout;
+        timeout.tv_sec = 10;
+        timeout.tv_usec = 0;
+        setsockopt(socketFd, SOL_SOCKET, SO_RCVTIMEO, (char *) &timeout, sizeof(timeout));
         //accept actual connection from the client
-        newsockfd = accept(socketFd, (struct sockaddr *) &cli_addr, (socklen_t *) &clilen);
+        newsockfd = accept(socketFd, (struct sockaddr *) &cli_addr, (socklen_t * ) & clilen);
 
 
         //if connections with the client failed
         if (newsockfd < 0) {
+            if (errno == EWOULDBLOCK) {
+                continue;
+            }
             perror("ERROR on accept");
             exit(1);
         }
-
         params->client->handleClient(newsockfd);
+
     }
 
     close(socketFd);
+    delete (params);
     return nullptr;
 }

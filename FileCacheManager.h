@@ -19,6 +19,7 @@ namespace server_side {
         virtual void pushSolution(string s, string p);
 
         virtual string popSolution(string p);
+
     };
 }
 
