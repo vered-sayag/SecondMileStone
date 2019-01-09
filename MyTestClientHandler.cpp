@@ -25,6 +25,7 @@ void server_side::MyTestClientHandler::handleClient(int socket) {
                             ans = solver->solve(problem);
                             cacheManager->pushSolution(problem, ans);
                         }
+                        ans = ans+"\n";
                         ssize_t n;
 
                         // Send message
