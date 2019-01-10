@@ -11,6 +11,7 @@ namespace server_side {
     class FileCacheManager : public CacheManager {
         map<string, string> problemSolutionMap;
         string myFileName;
+        pthread_mutex_t mutex;
     public:
         FileCacheManager(string fileName);
 
