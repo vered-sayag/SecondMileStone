@@ -89,9 +89,7 @@ void server_side::MyClientHandler::handleClient(int socket) {
     if (Vproblem[Vproblem.size() - 1][0] < 0 || Vproblem[Vproblem.size() - 1][0] > rows - 1
         || Vproblem[Vproblem.size() - 2][0] < 0 || Vproblem[Vproblem.size() - 2][0] > rows - 1
         || Vproblem[Vproblem.size() - 1][1] < 0 || Vproblem[Vproblem.size() - 1][1] > coloms - 1
-        || Vproblem[Vproblem.size() - 2][1] < 0 || Vproblem[Vproblem.size() - 2][1] > coloms - 1
-        ||Vproblem[Vproblem.size() - 1][0]<Vproblem[Vproblem.size() - 2][0]
-        ||Vproblem[Vproblem.size() - 1][1]<Vproblem[Vproblem.size() - 2][1]) {
+        || Vproblem[Vproblem.size() - 2][1] < 0 || Vproblem[Vproblem.size() - 2][1] > coloms - 1) {
         throw invalid_argument("the limits of the matrix not goods");
     }
     if (cacheManager->isExist(problem)) {
