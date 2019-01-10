@@ -44,7 +44,7 @@ void server_side::MyClientHandler::handleClient(int socket) {
         }
     }
 
-    unsigned long coloms=0;
+    unsigned long coloms = 0;
     unsigned long rows = Vproblem.size();
     for (int j = 0; j < rows; j++) {
         if (j == 0) {
@@ -86,7 +86,8 @@ void server_side::MyClientHandler::handleClient(int socket) {
         i = 0;
         numBytesRead = recv(socket, buf, sizeof(buf), 0);
     }
-    if (Vproblem[Vproblem.size() - 1][0] < 0 || Vproblem[Vproblem.size() - 1][0] > rows - 1
+    if (Vproblem[Vproblem.size() - 1].size() != 2 || Vproblem[Vproblem.size() - 2].size() != 2
+        || Vproblem[Vproblem.size() - 1][0] < 0 || Vproblem[Vproblem.size() - 1][0] > rows - 1
         || Vproblem[Vproblem.size() - 2][0] < 0 || Vproblem[Vproblem.size() - 2][0] > rows - 1
         || Vproblem[Vproblem.size() - 1][1] < 0 || Vproblem[Vproblem.size() - 1][1] > coloms - 1
         || Vproblem[Vproblem.size() - 2][1] < 0 || Vproblem[Vproblem.size() - 2][1] > coloms - 1) {
