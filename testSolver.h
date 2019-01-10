@@ -12,9 +12,9 @@ using namespace std;
 
 namespace server_side {
    
-    class testSolver:public Solver <string,vector<vector<int>>> {
+    class testSolver:public Solver <string,vector<vector<double >>> {
     public:
-         string solve(vector<vector<int>> p){
+         string solve(vector<vector<double >> p){
              return "ans";
 
          }

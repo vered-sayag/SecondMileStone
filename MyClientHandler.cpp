@@ -13,7 +13,7 @@ void server_side::MyClientHandler::handleClient(int socket) {
     string line = "";
     string problem = "";
     string ans;
-    vector<vector<int>> Vproblem;
+    vector<vector<double >> Vproblem;
     bool end = false;
     char buf[1024];
     int numBytesRead;
@@ -87,6 +87,10 @@ void server_side::MyClientHandler::handleClient(int socket) {
         numBytesRead = recv(socket, buf, sizeof(buf), 0);
     }
     if (Vproblem[Vproblem.size() - 1].size() != 2 || Vproblem[Vproblem.size() - 2].size() != 2
+        || Vproblem[Vproblem.size() - 1][0] != (int) Vproblem[Vproblem.size() - 1][0]
+        || Vproblem[Vproblem.size() - 1][1] != (int) Vproblem[Vproblem.size() - 1][1]
+        || Vproblem[Vproblem.size() - 2][0] != (int) Vproblem[Vproblem.size() - 2][0]
+        || Vproblem[Vproblem.size() - 2][1] != (int) Vproblem[Vproblem.size() - 2][1]
         || Vproblem[Vproblem.size() - 1][0] < 0 || Vproblem[Vproblem.size() - 1][0] > rows - 1
         || Vproblem[Vproblem.size() - 2][0] < 0 || Vproblem[Vproblem.size() - 2][0] > rows - 1
         || Vproblem[Vproblem.size() - 1][1] < 0 || Vproblem[Vproblem.size() - 1][1] > coloms - 1
@@ -109,14 +113,14 @@ void server_side::MyClientHandler::handleClient(int socket) {
 
 }
 
-vector<int> server_side::MyClientHandler::splitByComma(string str) {
-    vector<int> output;
+vector<double> server_side::MyClientHandler::splitByComma(string str) {
+    vector<double> output;
     regex r("[^,]+");
     std::smatch m;
     while (regex_search(str, m, r)) {
         string s2 = m[0];
-        if (regex_match(s2, regex("^\\d+"))) {
-            output.push_back(stoi(s2));
+        if (regex_match(s2, regex("^\\d*[(\\d\\.\\d)\\d]\\d*$"))) {
+            output.push_back(stod(s2));
         } else {
             throw invalid_argument("invalid matrix");
         }

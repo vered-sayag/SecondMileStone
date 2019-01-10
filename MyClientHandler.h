@@ -11,13 +11,13 @@
 
 namespace server_side {
     class MyClientHandler : public ClientHandler {
-        Solver<string,vector<vector<int>>> *solver;
+        Solver<string,vector<vector<double >>> *solver;
         CacheManager *cacheManager;
 
-        vector <int> splitByComma(string str);
+        vector <double > splitByComma(string str);
 
     public:
-        MyClientHandler(Solver<string, vector<vector<int>>> *s, CacheManager *c) : solver(s), cacheManager(c) {}
+        MyClientHandler(Solver<string, vector<vector<double >>> *s, CacheManager *c) : solver(s), cacheManager(c) {}
 
         virtual void handleClient(int socket) ;
 
