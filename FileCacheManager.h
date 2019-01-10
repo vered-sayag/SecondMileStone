@@ -21,6 +21,10 @@ namespace server_side {
 
         virtual string popSolution(string p);
 
+        ~FileCacheManager(){
+            pthread_mutex_destroy(&mutex);
+        }
+
     };
 }
 

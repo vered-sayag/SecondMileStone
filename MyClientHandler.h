@@ -17,7 +17,7 @@ namespace server_side {
         vector <int> splitByComma(string str);
 
     public:
-        MyClientHandler(Solver<string,vector<vector<int>>> *s, CacheManager *c) : solver(s), cacheManager(c) {}
+        MyClientHandler(Solver<string, vector<vector<int>>> *s, CacheManager *c) : solver(s), cacheManager(c) {}
 
         virtual void handleClient(int socket) ;
 

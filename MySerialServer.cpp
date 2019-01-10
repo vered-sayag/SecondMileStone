@@ -12,20 +12,24 @@
 #include <stdio.h>
 
 
-void server_side::MySerialServer::open(int port) {
+void server_side::MySerialServer::open(int port,ClientHandler *c) {
     TCPDataServer *params;
     params = new TCPDataServer();
     params->port = port;
-    params->client = clientHandler;
+    params->client = c;
     params->shouldStop = &shouldStop;
+    pthread_t trid;
     pthread_create(&trid, nullptr, thread_OpenDataServer, params);
+    trids.push_back(trid);
 }
 
 void server_side::MySerialServer::stop() {
-    shouldStop = 1;
-    pthread_join(trid, nullptr);
-
+    shouldStop = true;
+    for (int i=0; i<trids.size(); i++) {
+        pthread_join(trids[i], nullptr);
+    }
 }
+
 
 void *MySerialServer::thread_OpenDataServer(void *arg) {
     TCPDataServer *params = (TCPDataServer *) arg;
@@ -70,11 +74,14 @@ void *MySerialServer::thread_OpenDataServer(void *arg) {
         timeout.tv_usec = 0;
         setsockopt(socketFd, SOL_SOCKET, SO_RCVTIMEO, (char *) &timeout, sizeof(timeout));
         //accept actual connection from the client
-        newsockfd = accept(socketFd, (struct sockaddr *) &cli_addr, (socklen_t * ) & clilen);
+        newsockfd = accept(socketFd, (struct sockaddr *) &cli_addr, (socklen_t *) &clilen);
 
 
         //if connections with the client failed
         if (newsockfd < 0) {
+            if(*params->shouldStop){
+                break;
+            }
             if (errno == EWOULDBLOCK) {
                 continue;
             }
@@ -86,6 +93,7 @@ void *MySerialServer::thread_OpenDataServer(void *arg) {
     }
 
     close(socketFd);
+    delete (params->client);
     delete (params);
     return nullptr;
 }

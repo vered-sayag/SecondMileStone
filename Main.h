@@ -21,10 +21,10 @@ namespace server_side {
         public:
             static int main(int numArg, char *args[]) {
 
-                if (numArg == 2 && regex_match(args[1], regex("^\\d+")) ) {
-                    Server *server = new MySerialServer(
-                            new MyTestClientHandler(new StringReverse, new FileCacheManager("test2.txt")));
-                    server->open(atoi(args[1]));
+                if (numArg == 2 && regex_match(args[1], regex("^\\d+"))) {
+                    Server *server = new MySerialServer();
+                    server->open(atoi(args[1]),
+                                 new MyTestClientHandler(new StringReverse, new FileCacheManager("test2.txt")));
                     this_thread::sleep_for(chrono::milliseconds(100000));
                     server->stop();
                     delete (server);

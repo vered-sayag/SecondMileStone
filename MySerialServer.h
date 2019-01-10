@@ -5,18 +5,19 @@
 #ifndef SECONDMIILESTONE_MYSERIALSERVER_H
 #define SECONDMIILESTONE_MYSERIALSERVER_H
 
+#include <list>
+#include <vector>
 #include "Server.h"
 #include "ClientHandler.h"
 
 using namespace server_side;
 namespace server_side {
     class MySerialServer : public Server {
-        pthread_t trid;
+        vector<pthread_t> trids;
         bool shouldStop = false;
     public:
-        MySerialServer(ClientHandler *c) : Server(c) {}
 
-        void open(int port);
+        void open(int port,ClientHandler *c);
 
         void stop();
 
