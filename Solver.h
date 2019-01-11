@@ -5,10 +5,10 @@
 #ifndef SECONDMIILESTONE_SOLVER_H
 #define SECONDMIILESTONE_SOLVER_H
 namespace server_side {
-    template<class S, class P>
+    template<class Solution, class Problem>
     class Solver {
     public:
-        virtual S solve(P p) = 0;
+        virtual Solution solve(Problem problem) = 0;
     };
 }
 
