@@ -10,6 +10,9 @@
 #include "State.h"
 
 class GraphSearchable : public Searchable {
+    vector< vector< State > > matrix;
+
+
 public:
     GraphSearchable(vector<vector<double>> table) {}
     State getInitialState() {}
