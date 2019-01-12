@@ -22,5 +22,4 @@ namespace server_side{
     };
 }
 
-
 #endif //SECONDMIILESTONE_SERVER_SIDE_H

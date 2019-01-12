@@ -12,55 +12,15 @@
 #include <stdio.h>
 
 
-void server_side::MySerialServer::open(int port,ClientHandler *c) {
-    TCPDataServer *params;
-    params = new TCPDataServer();
-    params->port = port;
-    params->client = c;
-    params->shouldStop = &shouldStop;
-    pthread_t trid;
-    pthread_create(&trid, nullptr, thread_OpenDataServer, params);
-    trids.push_back(trid);
-}
 
-void server_side::MySerialServer::stop() {
-    shouldStop = true;
-    for (int i=0; i<trids.size(); i++) {
-        pthread_join(trids[i], nullptr);
-    }
-}
+void server_side::MySerialServer::unique(int socket, bool *shouldStop, ClientHandler *client) {
 
-
-void *MySerialServer::thread_OpenDataServer(void *arg) {
-    TCPDataServer *params = (TCPDataServer *) arg;
-
-    int socketFd; // main socket fileDescriptor
+    int socketFd= socket;
     int newsockfd; // new socket fileDescriptor
     int clilen;
 
     struct sockaddr_in serv_addr, cli_addr;
 
-    //creating socket object
-    socketFd = socket(AF_INET, SOCK_STREAM, 0);
-    //if creation faild
-    if (socketFd < 0) {
-        perror("ERROR opening socket");
-        exit(1);
-    }
-
-    //Initialize socket structure
-    bzero((char *) &serv_addr, sizeof(serv_addr));
-
-    serv_addr.sin_family = AF_INET; // tcp server
-    serv_addr.sin_addr.s_addr = INADDR_ANY; //server ip (0.0.0.0 for all incoming connections)
-    serv_addr.sin_port = htons(params->port); //init server port
-
-    //bind the host address using bind() call
-    if (bind(socketFd, (struct sockaddr *) &serv_addr, sizeof(serv_addr)) < 0) {
-        //if binding faild
-        perror("ERROR on binding");
-        exit(1);
-    }
 
 
     //start listening for the clients using the main socket
@@ -68,7 +28,7 @@ void *MySerialServer::thread_OpenDataServer(void *arg) {
     clilen = sizeof(cli_addr);
 
 
-    while (!*params->shouldStop) {
+    while (!*shouldStop) {
         timeval timeout;
         timeout.tv_sec = 10;
         timeout.tv_usec = 0;
@@ -79,7 +39,7 @@ void *MySerialServer::thread_OpenDataServer(void *arg) {
 
         //if connections with the client failed
         if (newsockfd < 0) {
-            if(*params->shouldStop){
+            if(*shouldStop){
                 break;
             }
             if (errno == EWOULDBLOCK) {
@@ -88,12 +48,8 @@ void *MySerialServer::thread_OpenDataServer(void *arg) {
             perror("ERROR on accept");
             exit(1);
         }
-        params->client->handleClient(newsockfd);
+        client->handleClient(newsockfd);
 
     }
 
-    close(socketFd);
-    delete (params->client);
-    delete (params);
-    return nullptr;
 }

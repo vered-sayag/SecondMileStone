@@ -9,27 +9,18 @@
 #include <vector>
 #include "Server.h"
 #include "ClientHandler.h"
+#include "MyTCPserver.h"
 
 using namespace server_side;
 namespace server_side {
-    class MySerialServer : public Server {
-        vector<pthread_t> trids;
-        bool shouldStop = false;
-    public:
+    class MySerialServer : public MyTCPserver {
 
-        void open(int port,ClientHandler *c);
+    protected:
 
-        void stop();
-
-        static void *thread_OpenDataServer(void *arg);
+        virtual void unique(int socket, bool *shouldStop, ClientHandler *client);
 
     };
 
-    typedef struct {
-        int port;
-        bool *shouldStop;
-        ClientHandler *client;
-    } TCPDataServer;
 
 }
 
