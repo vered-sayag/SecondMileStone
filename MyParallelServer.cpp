@@ -26,57 +26,54 @@ void server_side::MyParallelServer::unique(int socket, bool *shouldStop, ClientH
     int clilen;
 
     vector<pthread_t> trids;
-    for (int i = 0; i < 5; i++) {
-        pthread_t trid;
-        trids.push_back(trid);
-    }
 
     struct sockaddr_in serv_addr, cli_addr;
 
 
 
     //start listening for the clients using the main socket
-    listen(socketFd, 5);
+    listen(socketFd, SOMAXCONN);
+
+
     clilen = sizeof(cli_addr);
 
-    int ret = 0;
+
     while (!*shouldStop) {
-        for (int i = 0; i < 5; i++) {
-            if (trids[i]==0 ||(ret = pthread_kill(trids[i], 0)) != 0) {
-                timeval timeout;
-                timeout.tv_sec = 3;
-                timeout.tv_usec = 0;
-                setsockopt(socketFd, SOL_SOCKET, SO_RCVTIMEO, (char *) &timeout, sizeof(timeout));
-                //accept actual connection from the client
-
-                newsockfd = accept(socketFd, (struct sockaddr *) &cli_addr, (socklen_t *) &clilen);
 
 
-                //if connections with the client failed
-                if (newsockfd < 0) {
-                    if (*shouldStop) {
-                        break;
-                    }
-                    if (errno == EWOULDBLOCK) {
-                        continue;
-                    }
-                    perror("ERROR on accept");
-                    exit(1);
-                }
-                CallClientHandlerData *callClientHandlerData;
-                callClientHandlerData = new CallClientHandlerData();
+        timeval timeout;
+        timeout.tv_sec = 10;
+        timeout.tv_usec = 0;
+        setsockopt(socketFd, SOL_SOCKET, SO_RCVTIMEO, (char *) &timeout, sizeof(timeout));
+        //accept actual connection from the client
 
-                callClientHandlerData->socket = newsockfd;
-                callClientHandlerData->client = client;
-                pthread_t trid;
-                pthread_create(&trid, nullptr, thread_CallClientHandler, callClientHandlerData);
-                trids[i] = trid;
+        newsockfd = accept(socketFd, (struct sockaddr *) &cli_addr, (socklen_t *) &clilen);
+
+
+        //if connections with the client failed
+        if (newsockfd < 0) {
+            if (*shouldStop) {
+                break;
             }
+            if (errno == EWOULDBLOCK) {
+                continue;
+            }
+            perror("ERROR on accept");
+            exit(1);
         }
+        CallClientHandlerData *callClientHandlerData;
+        callClientHandlerData = new CallClientHandlerData();
+
+        callClientHandlerData->socket = newsockfd;
+        callClientHandlerData->client = client;
+        pthread_t trid;
+        pthread_create(&trid, nullptr, thread_CallClientHandler, callClientHandlerData);
+        trids.push_back(trid);
+
 
     }
 
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < trids.size(); i++) {
         pthread_join(trids[i], nullptr);
     }
 
