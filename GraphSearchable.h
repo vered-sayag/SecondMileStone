@@ -9,15 +9,24 @@
 #include "Searchable.h"
 #include "State.h"
 
-class GraphSearchable : public Searchable {
-    vector< vector< State > > matrix;
+class GraphSearchable : public Searchable< pair <int, int> > {
+    vector< vector< double > > matrix;
+    State< pair< int, int> > init;
+    State< pair< int, int> > goal;
 
 
 public:
-    GraphSearchable(vector<vector<double>> table) {}
-    State getInitialState() {}
-    State getGoalState() {}
-    State getAllPossibleState() {}
+    GraphSearchable(vector<vector<double>> table);
+
+    State< pair<int, int> > getInitialState() {
+        return init;
+    }
+
+    State< pair<int, int> > getGoalState() {
+        return goal;
+    }
+
+    vector< State <pair<int, int>> > getAllPossibleState(State<pair<int, int>> s);
 };
 
 

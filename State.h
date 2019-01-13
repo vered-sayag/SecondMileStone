@@ -12,15 +12,23 @@ template <class T>
 class State {
     T state;
     double cost;
-    state<T> comeFrom;
+    State<T> comeFrom;
 
 public:
-    state<T>(T state, double cost, State<T> comeFrom) {
-        this.state = state;
+    State<T>(T state, double cost, State<T> comeFrom) {
+        this->state = state;
     }
 
-    bool Equals(State<T> s) {
-        return state.equal(s.state);
+    bool operator==(State<T> s) {
+        return (getState() == s.getState());
+    }
+
+    T getState() const {
+        return state;
+    }
+
+    double getCost() const {
+        return cost;
     }
 
     void setCost(double cost) {

@@ -7,15 +7,13 @@
 
 #include "State.h"
 
+template<class T>
 class Searchable {
-    State init;
-    State goal;
-    list<State> states;
 
 public:
-    virtual State getInitialState() = 0;
-    virtual State getGoalState() = 0;
-    virtual State getAllPossibleState() = 0;
+    virtual State<T> getInitialState() = 0;
+    virtual State<T> getGoalState() = 0;
+    virtual vector< State<T> > getAllPossibleState(State<T> s) = 0;
 };
 
 

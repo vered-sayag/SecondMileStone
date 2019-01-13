@@ -7,10 +7,13 @@
 
 #include "Searchable.h"
 
-template <class Solution>
+template <class Problem, class Solution>
 class Searcher {
+protected:
+    int numOfNodesEvaluated;
+
 public:
-    virtual Solution search(Searchable searchable) = 0;
+    virtual Solution search(Searchable<Problem> searchable) = 0;
     virtual int getNumOfNodesEvaluated() = 0;
 };
 

@@ -4,28 +4,72 @@
 
 #include "GraphSearchable.h"
 
-GraphSearchable::GraphSearchable(vector < double > < vector > table) {
-    State< int[2] > tempState, init, goal;
+GraphSearchable::GraphSearchable(vector <  vector < double > > table) {
+    // initialize the matrix
+    matrix = table;
 
-    // initializing the list of states
-    for (unsigned int row = 0; row < table.size() - 1; ++row) {
-        for (unsigned int column; column < table[row].size(); ++column) {
-            int[2] state = {row, column};
-            double cost = table[row][column];
-            tempState = new State < int[2] >(state, cost, nullptr);
-            this.states.emplace_back(tempState);
-            this.matrix[i][j] = tempState;
+    // initializing the init and goal states
+    vector< double > start = table[table.size() - 2];
+    vector< double > end = table[table.size() - 1];
+    pair <int, int> initial = { (int)start[0], (int)start[1] };
+    pair <int, int> goaler = { (int)end[0], (int)end[1] };
+
+    double startCost = table[initial.first][initial.second];
+    double endCost = table[goaler.first][goaler.second];
+
+    init (initial, startCost, nullptr);
+    goal (goaler, endCost, nullptr);
+}
+
+vector<State<pair<int, int>>> GraphSearchable::getAllPossibleState(State<pair<int, int>> s) {
+    unsigned long numOfRows = matrix.size() - 2;
+    unsigned long numOfColumns = matrix[1].size();
+
+    vector< State< pair<int, int> > > adj;
+
+    // validation checking
+    int row = s.getState().first;
+    int column = s.getState().second;
+
+    // s is not in the last row
+    if (row + 1 < numOfRows - 1) {
+        pair< int, int> tempPair = {row + 1, column};
+        double tempCost = matrix[row + 1][column];
+        if (tempCost != -1) {
+            State< pair<int, int> > tempState (tempPair, tempCost, s);
+            adj.push_back(tempState);
         }
     }
 
-    // initializing the init and goal states
-    vector< double > startEnd = table[table.size()];
-    int[2] start = { startEnd[0], startEnd[1] };
-    int[2] end = { startEnd[2], startEnd[3] };
+    // s is not in the first row
+    if (row - 1 >= 0) {
+        pair< int, int> tempPair = {row - 1, column};
+        double tempCost = matrix[row - 1][column];
+        if (tempCost != -1) {
+            State< pair<int, int> > tempState (tempPair, tempCost, s);
+            adj.push_back(tempState);
+        }
+    }
 
-    double startCost = table[start[0]][start[1]];
-    double endCost = table[end[0]][end[1]];
+    // s is not in the first column
+    if (column - 1 >= 0) {
+        pair< int, int> tempPair = {row, column - 1};
+        double tempCost = matrix[row][column - 1];
+        if (tempCost != -1) {
+            State< pair<int, int> > tempState (tempPair, tempCost, s);
+            adj.push_back(tempState);
+        }
+    }
 
-    this.init = new State< int[2] > (start, startCost, nullptr);
-    this.goal = new State< int[2] > (end, endCost, nullptr);
+    // s is not in the last column
+    if (column + 1 < numOfColumns - 1) {
+        pair< int, int> tempPair = {row, column + 1};
+        double tempCost = matrix[row][column + 1];
+        if (tempCost != -1) {
+            State< pair<int, int> > tempState (tempPair, tempCost, s);
+            adj.push_back(tempState);
+        }
+    }
+
+    return adj;
 }
