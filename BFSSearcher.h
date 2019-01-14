@@ -9,13 +9,16 @@
 #include "Searcher.h"
 #include "Searchable.h"
 
-class BFSSearcher : public Searcher<string> {
-
-
-
+template <class T>
+class BFSSearcher : public Searcher<T, string> {
 public:
-    string search(Searchable searchable) {}
-    int getNumOfNodesEvaluated() {}
+    string search(Searchable<T> searchable) {
+
+    }
+
+    int getNumOfNodesEvaluated() {
+        return this->numOfNodesEvaluated;
+    }
 };
 
 
