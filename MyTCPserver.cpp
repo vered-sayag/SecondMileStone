@@ -40,8 +40,7 @@ void *server_side::MyTCPserver::thread_OpenDataServer(void *arg) {
     TCPDataServer *params = (TCPDataServer *) arg;
 
     int socketFd; // main socket fileDescriptor
-    int newsockfd; // new socket fileDescriptor
-    int clilen;
+
 
     struct sockaddr_in serv_addr, cli_addr;
 
