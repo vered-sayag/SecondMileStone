@@ -10,7 +10,7 @@
 template <class Problem, class Solution>
 class Searcher {
 protected:
-    int numOfNodesEvaluated=0;
+    int numOfNodesEvaluated = 0;
 
 public:
     virtual Solution search(Searchable<Problem>* searchable) = 0;

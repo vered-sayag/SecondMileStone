@@ -3,7 +3,7 @@
 #include "MyClientHandler.h"
 #include "MyParallelServer.h"
 #include "SearchSolver.h"
-#include "BFSSearcher.h"
+#include "BestFirstSearcher.h"
 int main(int numArg, char *args[]) {
 
 //server_side::boot::Main::main(numArg,args);

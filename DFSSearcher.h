@@ -5,8 +5,12 @@
 #ifndef SECONDMIILESTONE_DFSSEARCHER_H
 #define SECONDMIILESTONE_DFSSEARCHER_H
 
+using namespace std;
 
 class DFSSearcher {
+    stack<T> states;
+
+public:
 
 };
 
