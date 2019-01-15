@@ -13,8 +13,20 @@ Searchable.h
 /home/vered/CLionProjects/SecondMileStone/Searchable.h
 Searcher.h
 /home/vered/CLionProjects/SecondMileStone/Searcher.h
-MyPriorityQueue.h
-/home/vered/CLionProjects/SecondMileStone/MyPriorityQueue.h
+PriorityQueueDB.h
+/home/vered/CLionProjects/SecondMileStone/PriorityQueueDB.h
+TraceBackSearcher.h
+/home/vered/CLionProjects/SecondMileStone/TraceBackSearcher.h
+
+/home/vered/CLionProjects/SecondMileStone/BFSSearcher.h
+State.h
+/home/vered/CLionProjects/SecondMileStone/State.h
+Searcher.h
+/home/vered/CLionProjects/SecondMileStone/Searcher.h
+QueueDB.h
+/home/vered/CLionProjects/SecondMileStone/QueueDB.h
+TraceBackSearcher.h
+/home/vered/CLionProjects/SecondMileStone/TraceBackSearcher.h
 
 /home/vered/CLionProjects/SecondMileStone/BestFirstSearcher.h
 string
@@ -23,8 +35,10 @@ Searchable.h
 /home/vered/CLionProjects/SecondMileStone/Searchable.h
 Searcher.h
 /home/vered/CLionProjects/SecondMileStone/Searcher.h
-MyPriorityQueue.h
-/home/vered/CLionProjects/SecondMileStone/MyPriorityQueue.h
+PriorityQueueDB.h
+/home/vered/CLionProjects/SecondMileStone/PriorityQueueDB.h
+TraceBackSearcher.h
+/home/vered/CLionProjects/SecondMileStone/TraceBackSearcher.h
 
 /home/vered/CLionProjects/SecondMileStone/CacheManager.h
 string
@@ -34,19 +48,25 @@ string
 ios
 -
 
+/home/vered/CLionProjects/SecondMileStone/DBtoSearcher.h
+State.h
+/home/vered/CLionProjects/SecondMileStone/State.h
+vector
+-
+
+/home/vered/CLionProjects/SecondMileStone/DFSSearcher.h
+vector
+-
+Searcher.h
+/home/vered/CLionProjects/SecondMileStone/Searcher.h
+StackDB.h
+/home/vered/CLionProjects/SecondMileStone/StackDB.h
+
 /home/vered/CLionProjects/SecondMileStone/FileCacheManager.h
 map
 -
 CacheManager.h
 /home/vered/CLionProjects/SecondMileStone/CacheManager.h
-
-/home/vered/CLionProjects/SecondMileStone/GraphSearchable.h
-vector
--
-Searchable.h
-/home/vered/CLionProjects/SecondMileStone/Searchable.h
-State.h
-/home/vered/CLionProjects/SecondMileStone/State.h
 
 /home/vered/CLionProjects/SecondMileStone/Main.h
 iostream
@@ -67,6 +87,14 @@ MyTestClientHandler.h
 /home/vered/CLionProjects/SecondMileStone/MyTestClientHandler.h
 StringReverse.h
 /home/vered/CLionProjects/SecondMileStone/StringReverse.h
+
+/home/vered/CLionProjects/SecondMileStone/MatrixSearchable.h
+vector
+-
+Searchable.h
+/home/vered/CLionProjects/SecondMileStone/Searchable.h
+State.h
+/home/vered/CLionProjects/SecondMileStone/State.h
 
 /home/vered/CLionProjects/SecondMileStone/MyClientHandler.h
 ClientHandler.h
@@ -128,6 +156,28 @@ Solver.h
 CacheManager.h
 /home/vered/CLionProjects/SecondMileStone/CacheManager.h
 
+/home/vered/CLionProjects/SecondMileStone/PriorityQueueDB.h
+vector
+-
+MyPriorityQueue.h
+/home/vered/CLionProjects/SecondMileStone/MyPriorityQueue.h
+Searcher.h
+/home/vered/CLionProjects/SecondMileStone/Searcher.h
+State.h
+/home/vered/CLionProjects/SecondMileStone/State.h
+DBtoSearcher.h
+/home/vered/CLionProjects/SecondMileStone/DBtoSearcher.h
+
+/home/vered/CLionProjects/SecondMileStone/QueueDB.h
+queue
+-
+vector
+-
+Searcher.h
+/home/vered/CLionProjects/SecondMileStone/Searcher.h
+DBtoSearcher.h
+/home/vered/CLionProjects/SecondMileStone/DBtoSearcher.h
+
 /home/vered/CLionProjects/SecondMileStone/SearchSolver.h
 string
 -
@@ -141,12 +191,16 @@ State.h
 /home/vered/CLionProjects/SecondMileStone/State.h
 Searchable.h
 /home/vered/CLionProjects/SecondMileStone/Searchable.h
-GraphSearchable.h
-/home/vered/CLionProjects/SecondMileStone/GraphSearchable.h
+MatrixSearchable.h
+/home/vered/CLionProjects/SecondMileStone/MatrixSearchable.h
 BestFirstSearcher.h
 /home/vered/CLionProjects/SecondMileStone/BestFirstSearcher.h
 AStarSearcher.h
 /home/vered/CLionProjects/SecondMileStone/AStarSearcher.h
+BFSSearcher.h
+/home/vered/CLionProjects/SecondMileStone/BFSSearcher.h
+DFSSearcher.h
+/home/vered/CLionProjects/SecondMileStone/DFSSearcher.h
 
 /home/vered/CLionProjects/SecondMileStone/Searchable.h
 vector
@@ -164,6 +218,18 @@ ClientHandler.h
 
 /home/vered/CLionProjects/SecondMileStone/Solver.h
 
+/home/vered/CLionProjects/SecondMileStone/StackDB.h
+stack
+-
+vector
+-
+State.h
+/home/vered/CLionProjects/SecondMileStone/State.h
+Searcher.h
+/home/vered/CLionProjects/SecondMileStone/Searcher.h
+DBtoSearcher.h
+/home/vered/CLionProjects/SecondMileStone/DBtoSearcher.h
+
 /home/vered/CLionProjects/SecondMileStone/State.h
 
 /home/vered/CLionProjects/SecondMileStone/StringReverse.h
@@ -171,6 +237,12 @@ Solver.h
 /home/vered/CLionProjects/SecondMileStone/Solver.h
 string
 /home/vered/CLionProjects/SecondMileStone/string
+
+/home/vered/CLionProjects/SecondMileStone/TraceBackSearcher.h
+Searcher.h
+/home/vered/CLionProjects/SecondMileStone/Searcher.h
+DBtoSearcher.h
+/home/vered/CLionProjects/SecondMileStone/DBtoSearcher.h
 
 /home/vered/CLionProjects/SecondMileStone/main.cpp
 Main.h

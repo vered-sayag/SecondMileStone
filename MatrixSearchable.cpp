@@ -3,9 +3,9 @@
 //
 
 #include <cmath>
-#include "GraphSearchable.h"
+#include "MatrixSearchable.h"
 
-GraphSearchable::GraphSearchable(const vector<vector<double> > &table) {
+MatrixSearchable::MatrixSearchable(const vector<vector<double> > &table) {
     // initialize the matrix
     matrix = table;
 
@@ -22,7 +22,7 @@ GraphSearchable::GraphSearchable(const vector<vector<double> > &table) {
     goal = new State<pair<int, int>>(goaler, endCost, nullptr);
 }
 
-vector<State<pair<int, int>> *> GraphSearchable::getAllPossibleState(State<pair<int, int>> *s) {
+vector<State<pair<int, int>> *> MatrixSearchable::getAllPossibleState(State<pair<int, int>> *s) {
     unsigned long numOfRows = matrix.size() - 2;
     unsigned long numOfColumns = matrix[1].size();
 
@@ -73,7 +73,7 @@ vector<State<pair<int, int>> *> GraphSearchable::getAllPossibleState(State<pair<
     return adj;
 }
 
-vector<State<pair<int, int>> *> GraphSearchable::getAllPossibleState(State<pair<int, int>> *cur, State<pair<int, int>> *target) {
+vector<State<pair<int, int>> *> MatrixSearchable::getAllPossibleState(State<pair<int, int>> *cur, State<pair<int, int>> *target) {
     unsigned long numOfRows = matrix.size() - 2;
     unsigned long numOfColumns = matrix[1].size();
 

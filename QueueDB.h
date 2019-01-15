@@ -8,18 +8,27 @@
 #include <queue>
 #include <vector>
 #include "Searcher.h"
-template <class T, class Solution>
-class QueueSearcher : public Searcher<T, Solution> {
-protected:
+#include "DBtoSearcher.h"
+template <class T>
+class QueueDB: public DBtoSearcher<T>{
+private:
     queue<State<T>*> openList;
-    vector<State<T>*> closedList;
 
 public:
-    virtual State<T>* pop() {
+
+    virtual void pushToOpen(State<T>* state) {
+        openList.push(state);
+    }
+
+
+
+    virtual State<T>* popFromOpen() {
         State<T>* temp = openList.front();
         openList.pop();
         return temp;
     }
+
+
 
     virtual State<T>* top() {
         return openList.front();
@@ -29,13 +38,10 @@ public:
         openList.size();
     }
 
-    virtual void push(State<T>* state) {
-        openList.push(state);
-    }
-
-    virtual bool empty() {
+    virtual bool emptyOpen() {
         return openList.empty();
     }
+
 
     virtual bool isExistQueue(State<T>* state) {
         vector<State<T>*> states;
@@ -43,13 +49,13 @@ public:
         bool exist = false;
 
         // pop all states to a vector and checking if the state exists in pq
-        while (!empty()) {
-            tempState = pop();
+        while (!emptyOpen()) {
+            tempState = popFromOpen();
             states.push_back(tempState);
         }
         // check if the state exists in the vector
         for (int i = 0; i < states.size(); ++i) {
-            push(states[i]);
+            pushToOpen(states[i]);
             if (states[i] == state) {
                 exist = true;
             }
@@ -57,14 +63,6 @@ public:
         return exist;
     }
 
-    virtual bool isExistVector(State<T>* state) {
-        for ( int i =0; i<closedList.size(); i++){
-            if (*closedList[i] == *state) {
-                return true;
-            }
-        }
-        return false;
-    }
 };
 
 

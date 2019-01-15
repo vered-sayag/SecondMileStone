@@ -8,7 +8,7 @@ Right,Down,Down
 Right,Down,Down
 1,1,7;-1,7,1;7,1,1;0,0;2,0;
 Right,Down,Down,Left
-1,1,7;-1,7,1;7,1,1;0,1;2,0;
-Down,Down,Left
 1,1,7;-1,7,1;7,2,1;0,1;2,0;
+Down,Down,Left
+1,1,7;-1,7,3;7,2,10;0,1;2,0;
 Down,Down,Left

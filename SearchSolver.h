@@ -11,10 +11,11 @@
 #include "Searcher.h"
 #include "State.h"
 #include "Searchable.h"
-#include "GraphSearchable.h"
+#include "MatrixSearchable.h"
 #include "BestFirstSearcher.h"
 #include "AStarSearcher.h"
 #include "BFSSearcher.h"
+#include "DFSSearcher.h"
 
 using namespace std;
 namespace server_side {
@@ -23,7 +24,7 @@ namespace server_side {
 
         string solve(vector<vector<double >> p) {
             Searcher<pair<int, int>, vector<State<pair<int, int> > *>> *searcher = new BFSSearcher<pair<int, int>>();
-            Searchable<pair<int, int>> *searchable = new GraphSearchable(p);
+            Searchable<pair<int, int>> *searchable = new MatrixSearchable(p);
             vector<State<pair<int, int> > *> solution = searcher->search(searchable);
 
             if (solution.size() == 0) {

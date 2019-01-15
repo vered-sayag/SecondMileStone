@@ -5,70 +5,85 @@
 #ifndef SECONDMIILESTONE_BFSSEARCHER_H
 #define SECONDMIILESTONE_BFSSEARCHER_H
 
-#include <queue>
-#include "State.h"
-#include "QueueSearcher.h"
 
+#include "State.h"
+#include "Searcher.h"
+#include "QueueDB.h"
+#include "TraceBackSearcher.h"
 using namespace std;
 
 template <class T>
-class BFSSearcher : public QueueSearcher<T, vector<State<T> *>> {
+class BFSSearcher : public TraceBackSearcher<T>  {
+private:
+    QueueDB<T> queue;
+
 public:
     vector<State<T> *> search(Searchable<T> *searchable) {
         State<T> *init = searchable->getInitialState();
         State<T> *goal = searchable->getGoalState();
-        State<T> *proccessState;
+        State<T> *processState;
 
-        this->push(init);
+        queue.pushToOpen(init);
 
-        while(!this->empty()) {
-            proccessState = this->pop();
+        // initial to 0 before processing
+        this->numOfNodesEvaluated = 0;
 
-            if(*proccessState == *goal) {
-                return backTrace(init, proccessState);
+        // if init is goal we will find it out in the first iteration of the while loop
+
+        while(!queue.emptyOpen()) {
+            this->numOfNodesEvaluated++;
+            processState = queue.popFromOpen();
+
+            if(*processState == *goal) {
+                vector<State<T> *> output = this->backTrace(init, processState);
+                this->clearAll(output,&queue);
+                return output;
+
             }
 
-            vector<State<T>*> successors = searchable->getAllPossibleState(proccessState);
+            vector<State<T>*> successors = searchable->getAllPossibleState(processState);
 
             for (int i = 0; i < successors.size(); ++i) {
-                // not to proccess the father again
-                if(*successors[i] == *proccessState) {
-                    continue;
-                }
+                // not to process the father again
 
                 // if the successor is in the closed list
-                if (!this->isExistVector(successors[i])) {
-
-                    // set the ancestor
-//                    successors[i]->setCameFrom(proccessState);
+                if (!queue.isExistVector(successors[i])) {
 
                     // insert to the queue
-                    this->openList.push(successors[i]);
+                    queue.pushToOpen(successors[i]);
 
                     // insert the successor to the closed list
-                    this->closedList.push_back(successors[i]);
+                    queue.pushToClosed(successors[i]);
                 }
             }
         }
         vector<State<T> *> emptyVector;
+        this->clearAll(emptyVector,&queue);
         return emptyVector;
     }
 
-    vector<State<T> *> backTrace(State<T> *init, State<T> *goal) {
-        vector<State<T> *> trace;
-        vector<State<T> *> output;
-        State<T> *tempState = goal;
-
-        while (!(*tempState == *init)) {
-            trace.push_back(tempState);
-            tempState = tempState->getCameFrom();
+    virtual void clearAll(vector<State<T> *> output,DBtoSearcher<T>* DB) {
+        State<T> *temp;
+        while (!DB->emptyOpen()) {
+            State<T> * temp =DB->popFromOpen();
+            if(!DB->isExistVector(temp)){
+                delete (temp);
+            }
         }
-        trace.push_back(init);
+        while (!DB->emptyClosed()) {
 
-        for (int i = trace.size() - 1; i >= 0; i--) {
-            output.push_back(trace[i]);
+            temp = DB->popFromClosed();
+
+            for (int i = 0; i < output.size(); i++) {
+                if (output[i] == temp) {
+                    break;
+                }
+                if (i == output.size() - 1) {
+                    delete (temp);
+                }
+            }
+
         }
-        return output;
     }
 };
 

@@ -148,18 +148,18 @@ CMakeFiles/SecondMiilestone.dir/MyTCPserver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SecondMiilestone.dir/MyTCPserver.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vered/CLionProjects/SecondMileStone/MyTCPserver.cpp -o CMakeFiles/SecondMiilestone.dir/MyTCPserver.cpp.s
 
-CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.o: CMakeFiles/SecondMiilestone.dir/flags.make
-CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.o: ../GraphSearchable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.o -c /home/vered/CLionProjects/SecondMileStone/GraphSearchable.cpp
+CMakeFiles/SecondMiilestone.dir/MatrixSearchable.cpp.o: CMakeFiles/SecondMiilestone.dir/flags.make
+CMakeFiles/SecondMiilestone.dir/MatrixSearchable.cpp.o: ../MatrixSearchable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SecondMiilestone.dir/MatrixSearchable.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SecondMiilestone.dir/MatrixSearchable.cpp.o -c /home/vered/CLionProjects/SecondMileStone/MatrixSearchable.cpp
 
-CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vered/CLionProjects/SecondMileStone/GraphSearchable.cpp > CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.i
+CMakeFiles/SecondMiilestone.dir/MatrixSearchable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SecondMiilestone.dir/MatrixSearchable.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vered/CLionProjects/SecondMileStone/MatrixSearchable.cpp > CMakeFiles/SecondMiilestone.dir/MatrixSearchable.cpp.i
 
-CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vered/CLionProjects/SecondMileStone/GraphSearchable.cpp -o CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.s
+CMakeFiles/SecondMiilestone.dir/MatrixSearchable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SecondMiilestone.dir/MatrixSearchable.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vered/CLionProjects/SecondMileStone/MatrixSearchable.cpp -o CMakeFiles/SecondMiilestone.dir/MatrixSearchable.cpp.s
 
 # Object files for target SecondMiilestone
 SecondMiilestone_OBJECTS = \
@@ -170,7 +170,7 @@ SecondMiilestone_OBJECTS = \
 "CMakeFiles/SecondMiilestone.dir/MyClientHandler.cpp.o" \
 "CMakeFiles/SecondMiilestone.dir/MyParallelServer.cpp.o" \
 "CMakeFiles/SecondMiilestone.dir/MyTCPserver.cpp.o" \
-"CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.o"
+"CMakeFiles/SecondMiilestone.dir/MatrixSearchable.cpp.o"
 
 # External object files for target SecondMiilestone
 SecondMiilestone_EXTERNAL_OBJECTS =
@@ -182,7 +182,7 @@ SecondMiilestone: CMakeFiles/SecondMiilestone.dir/FileCacheManager.cpp.o
 SecondMiilestone: CMakeFiles/SecondMiilestone.dir/MyClientHandler.cpp.o
 SecondMiilestone: CMakeFiles/SecondMiilestone.dir/MyParallelServer.cpp.o
 SecondMiilestone: CMakeFiles/SecondMiilestone.dir/MyTCPserver.cpp.o
-SecondMiilestone: CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.o
+SecondMiilestone: CMakeFiles/SecondMiilestone.dir/MatrixSearchable.cpp.o
 SecondMiilestone: CMakeFiles/SecondMiilestone.dir/build.make
 SecondMiilestone: CMakeFiles/SecondMiilestone.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable SecondMiilestone"

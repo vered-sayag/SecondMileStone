@@ -150,32 +150,32 @@ FileCacheManager.cpp.s:
 	$(MAKE) -f CMakeFiles/SecondMiilestone.dir/build.make CMakeFiles/SecondMiilestone.dir/FileCacheManager.cpp.s
 .PHONY : FileCacheManager.cpp.s
 
-GraphSearchable.o: GraphSearchable.cpp.o
+MatrixSearchable.o: MatrixSearchable.cpp.o
 
-.PHONY : GraphSearchable.o
+.PHONY : MatrixSearchable.o
 
 # target to build an object file
-GraphSearchable.cpp.o:
-	$(MAKE) -f CMakeFiles/SecondMiilestone.dir/build.make CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.o
-.PHONY : GraphSearchable.cpp.o
+MatrixSearchable.cpp.o:
+	$(MAKE) -f CMakeFiles/SecondMiilestone.dir/build.make CMakeFiles/SecondMiilestone.dir/MatrixSearchable.cpp.o
+.PHONY : MatrixSearchable.cpp.o
 
-GraphSearchable.i: GraphSearchable.cpp.i
+MatrixSearchable.i: MatrixSearchable.cpp.i
 
-.PHONY : GraphSearchable.i
+.PHONY : MatrixSearchable.i
 
 # target to preprocess a source file
-GraphSearchable.cpp.i:
-	$(MAKE) -f CMakeFiles/SecondMiilestone.dir/build.make CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.i
-.PHONY : GraphSearchable.cpp.i
+MatrixSearchable.cpp.i:
+	$(MAKE) -f CMakeFiles/SecondMiilestone.dir/build.make CMakeFiles/SecondMiilestone.dir/MatrixSearchable.cpp.i
+.PHONY : MatrixSearchable.cpp.i
 
-GraphSearchable.s: GraphSearchable.cpp.s
+MatrixSearchable.s: MatrixSearchable.cpp.s
 
-.PHONY : GraphSearchable.s
+.PHONY : MatrixSearchable.s
 
 # target to generate assembly for a file
-GraphSearchable.cpp.s:
-	$(MAKE) -f CMakeFiles/SecondMiilestone.dir/build.make CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.s
-.PHONY : GraphSearchable.cpp.s
+MatrixSearchable.cpp.s:
+	$(MAKE) -f CMakeFiles/SecondMiilestone.dir/build.make CMakeFiles/SecondMiilestone.dir/MatrixSearchable.cpp.s
+.PHONY : MatrixSearchable.cpp.s
 
 MyClientHandler.o: MyClientHandler.cpp.o
 
@@ -351,9 +351,9 @@ help:
 	@echo "... FileCacheManager.o"
 	@echo "... FileCacheManager.i"
 	@echo "... FileCacheManager.s"
-	@echo "... GraphSearchable.o"
-	@echo "... GraphSearchable.i"
-	@echo "... GraphSearchable.s"
+	@echo "... MatrixSearchable.o"
+	@echo "... MatrixSearchable.i"
+	@echo "... MatrixSearchable.s"
 	@echo "... MyClientHandler.o"
 	@echo "... MyClientHandler.i"
 	@echo "... MyClientHandler.s"

@@ -5,10 +5,10 @@ CMakeFiles/SecondMiilestone.dir/FileCacheManager.cpp.o: ../CacheManager.h
 CMakeFiles/SecondMiilestone.dir/FileCacheManager.cpp.o: ../FileCacheManager.cpp
 CMakeFiles/SecondMiilestone.dir/FileCacheManager.cpp.o: ../FileCacheManager.h
 
-CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.o: ../GraphSearchable.cpp
-CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.o: ../GraphSearchable.h
-CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.o: ../Searchable.h
-CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.o: ../State.h
+CMakeFiles/SecondMiilestone.dir/MatrixSearchable.cpp.o: ../MatrixSearchable.cpp
+CMakeFiles/SecondMiilestone.dir/MatrixSearchable.cpp.o: ../MatrixSearchable.h
+CMakeFiles/SecondMiilestone.dir/MatrixSearchable.cpp.o: ../Searchable.h
+CMakeFiles/SecondMiilestone.dir/MatrixSearchable.cpp.o: ../State.h
 
 CMakeFiles/SecondMiilestone.dir/MyClientHandler.cpp.o: ../CacheManager.h
 CMakeFiles/SecondMiilestone.dir/MyClientHandler.cpp.o: ../ClientHandler.h
@@ -41,24 +41,31 @@ CMakeFiles/SecondMiilestone.dir/MyTestClientHandler.cpp.o: ../MyTestClientHandle
 CMakeFiles/SecondMiilestone.dir/MyTestClientHandler.cpp.o: ../Solver.h
 
 CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../AStarSearcher.h
+CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../BFSSearcher.h
 CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../BestFirstSearcher.h
 CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../CacheManager.h
 CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../ClientHandler.h
+CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../DBtoSearcher.h
+CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../DFSSearcher.h
 CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../FileCacheManager.h
-CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../GraphSearchable.h
 CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../Main.h
+CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../MatrixSearchable.h
 CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../MyClientHandler.h
 CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../MyParallelServer.h
 CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../MyPriorityQueue.h
 CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../MySerialServer.h
 CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../MyTCPserver.h
 CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../MyTestClientHandler.h
+CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../PriorityQueueDB.h
+CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../QueueDB.h
 CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../SearchSolver.h
 CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../Searchable.h
 CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../Searcher.h
 CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../Server.h
 CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../Solver.h
+CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../StackDB.h
 CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../State.h
 CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../StringReverse.h
+CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../TraceBackSearcher.h
 CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../main.cpp
 

@@ -103,19 +103,25 @@
 		<Unit filename="/home/vered/CLionProjects/SecondMileStone/ClientHandler.h">
 			<Option target="SecondMiilestone"/>
 		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/DBtoSearcher.h">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/DFSSearcher.h">
+			<Option target="SecondMiilestone"/>
+		</Unit>
 		<Unit filename="/home/vered/CLionProjects/SecondMileStone/FileCacheManager.cpp">
 			<Option target="SecondMiilestone"/>
 		</Unit>
 		<Unit filename="/home/vered/CLionProjects/SecondMileStone/FileCacheManager.h">
 			<Option target="SecondMiilestone"/>
 		</Unit>
-		<Unit filename="/home/vered/CLionProjects/SecondMileStone/GraphSearchable.cpp">
-			<Option target="SecondMiilestone"/>
-		</Unit>
-		<Unit filename="/home/vered/CLionProjects/SecondMileStone/GraphSearchable.h">
-			<Option target="SecondMiilestone"/>
-		</Unit>
 		<Unit filename="/home/vered/CLionProjects/SecondMileStone/Main.h">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/MatrixSearchable.cpp">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/MatrixSearchable.h">
 			<Option target="SecondMiilestone"/>
 		</Unit>
 		<Unit filename="/home/vered/CLionProjects/SecondMileStone/MyClientHandler.cpp">
@@ -151,7 +157,7 @@
 		<Unit filename="/home/vered/CLionProjects/SecondMileStone/MyTestClientHandler.h">
 			<Option target="SecondMiilestone"/>
 		</Unit>
-		<Unit filename="/home/vered/CLionProjects/SecondMileStone/PQSearcher.h">
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/PriorityQueueDB.h">
 			<Option target="SecondMiilestone"/>
 		</Unit>
 		<Unit filename="/home/vered/CLionProjects/SecondMileStone/SearchSolver.h">
@@ -169,10 +175,16 @@
 		<Unit filename="/home/vered/CLionProjects/SecondMileStone/Solver.h">
 			<Option target="SecondMiilestone"/>
 		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/StackDB.h">
+			<Option target="SecondMiilestone"/>
+		</Unit>
 		<Unit filename="/home/vered/CLionProjects/SecondMileStone/State.h">
 			<Option target="SecondMiilestone"/>
 		</Unit>
 		<Unit filename="/home/vered/CLionProjects/SecondMileStone/StringReverse.h">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/TraceBackSearcher.h">
 			<Option target="SecondMiilestone"/>
 		</Unit>
 		<Unit filename="/home/vered/CLionProjects/SecondMileStone/main.cpp">

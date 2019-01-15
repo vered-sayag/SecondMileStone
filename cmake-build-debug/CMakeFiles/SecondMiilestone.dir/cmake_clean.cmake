@@ -6,7 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/SecondMiilestone.dir/MyClientHandler.cpp.o"
   "CMakeFiles/SecondMiilestone.dir/MyParallelServer.cpp.o"
   "CMakeFiles/SecondMiilestone.dir/MyTCPserver.cpp.o"
-  "CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.o"
+  "CMakeFiles/SecondMiilestone.dir/MatrixSearchable.cpp.o"
   "SecondMiilestone.pdb"
   "SecondMiilestone"
 )

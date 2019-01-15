@@ -5,9 +5,9 @@ CMakeFiles/SecondMiilestone.dir/FileCacheManager.cpp.o
  /home/vered/CLionProjects/SecondMileStone/CacheManager.h
  /home/vered/CLionProjects/SecondMileStone/FileCacheManager.cpp
  /home/vered/CLionProjects/SecondMileStone/FileCacheManager.h
-CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.o
- /home/vered/CLionProjects/SecondMileStone/GraphSearchable.cpp
- /home/vered/CLionProjects/SecondMileStone/GraphSearchable.h
+CMakeFiles/SecondMiilestone.dir/MatrixSearchable.cpp.o
+ /home/vered/CLionProjects/SecondMileStone/MatrixSearchable.cpp
+ /home/vered/CLionProjects/SecondMileStone/MatrixSearchable.h
  /home/vered/CLionProjects/SecondMileStone/Searchable.h
  /home/vered/CLionProjects/SecondMileStone/State.h
 CMakeFiles/SecondMiilestone.dir/MyClientHandler.cpp.o
@@ -42,23 +42,30 @@ CMakeFiles/SecondMiilestone.dir/MyTestClientHandler.cpp.o
  /home/vered/CLionProjects/SecondMileStone/Solver.h
 CMakeFiles/SecondMiilestone.dir/main.cpp.o
  /home/vered/CLionProjects/SecondMileStone/AStarSearcher.h
+ /home/vered/CLionProjects/SecondMileStone/BFSSearcher.h
  /home/vered/CLionProjects/SecondMileStone/BestFirstSearcher.h
  /home/vered/CLionProjects/SecondMileStone/CacheManager.h
  /home/vered/CLionProjects/SecondMileStone/ClientHandler.h
+ /home/vered/CLionProjects/SecondMileStone/DBtoSearcher.h
+ /home/vered/CLionProjects/SecondMileStone/DFSSearcher.h
  /home/vered/CLionProjects/SecondMileStone/FileCacheManager.h
- /home/vered/CLionProjects/SecondMileStone/GraphSearchable.h
  /home/vered/CLionProjects/SecondMileStone/Main.h
+ /home/vered/CLionProjects/SecondMileStone/MatrixSearchable.h
  /home/vered/CLionProjects/SecondMileStone/MyClientHandler.h
  /home/vered/CLionProjects/SecondMileStone/MyParallelServer.h
  /home/vered/CLionProjects/SecondMileStone/MyPriorityQueue.h
  /home/vered/CLionProjects/SecondMileStone/MySerialServer.h
  /home/vered/CLionProjects/SecondMileStone/MyTCPserver.h
  /home/vered/CLionProjects/SecondMileStone/MyTestClientHandler.h
+ /home/vered/CLionProjects/SecondMileStone/PriorityQueueDB.h
+ /home/vered/CLionProjects/SecondMileStone/QueueDB.h
  /home/vered/CLionProjects/SecondMileStone/SearchSolver.h
  /home/vered/CLionProjects/SecondMileStone/Searchable.h
  /home/vered/CLionProjects/SecondMileStone/Searcher.h
  /home/vered/CLionProjects/SecondMileStone/Server.h
  /home/vered/CLionProjects/SecondMileStone/Solver.h
+ /home/vered/CLionProjects/SecondMileStone/StackDB.h
  /home/vered/CLionProjects/SecondMileStone/State.h
  /home/vered/CLionProjects/SecondMileStone/StringReverse.h
+ /home/vered/CLionProjects/SecondMileStone/TraceBackSearcher.h
  /home/vered/CLionProjects/SecondMileStone/main.cpp

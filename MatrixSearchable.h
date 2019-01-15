@@ -9,14 +9,14 @@
 #include "Searchable.h"
 #include "State.h"
 
-class GraphSearchable : public Searchable< pair <int, int> > {
+class MatrixSearchable : public Searchable< pair <int, int> > {
     vector< vector< double > > matrix;
     State< pair< int, int> >* init;
     State< pair< int, int> >* goal;
 
 
 public:
-    GraphSearchable(const vector<vector<double>> &table);
+    MatrixSearchable(const vector<vector<double>> &table);
 
     State< pair<int, int> >* getInitialState() {
         return init;
@@ -28,7 +28,7 @@ public:
 
     vector< State <pair<int, int>> *> getAllPossibleState(State<pair<int, int>> *s);
 
-    ~GraphSearchable(){
+    ~MatrixSearchable(){
         delete(goal);
     }
 
