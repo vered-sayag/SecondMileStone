@@ -54,7 +54,7 @@ CMakeFiles/SecondMiilestone.dir/MyTestClientHandler.cpp.o: ../Solver.h
 CMakeFiles/SecondMiilestone.dir/PQSearcher.cpp.o: ../PQSearcher.cpp
 CMakeFiles/SecondMiilestone.dir/PQSearcher.cpp.o: ../PQSearcher.h
 
-CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../BFSSearcher.h
+CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../BestFirstSearcher.h
 CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../CacheManager.h
 CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../ClientHandler.h
 CMakeFiles/SecondMiilestone.dir/main.cpp.o: ../FileCacheManager.h

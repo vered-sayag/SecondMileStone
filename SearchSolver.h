@@ -10,9 +10,9 @@
 #include "Solver.h"
 #include "Searcher.h"
 #include "State.h"
-#include "BestFirstSearcher.h"
 #include "Searchable.h"
 #include "GraphSearchable.h"
+#include "BestFirstSearcher.h"
 
 using namespace std;
 namespace server_side {
@@ -20,7 +20,7 @@ namespace server_side {
     public:
 
         string solve(vector<vector<double >> p) {
-            Searcher<pair<int, int>, vector<State<pair<int, int> > *>> *searcher = new BFSSearcher<pair<int, int>>();
+            Searcher<pair<int, int>, vector<State<pair<int, int> > *>> *searcher = new BestFirstSearcher<pair<int, int>>();
             Searchable<pair<int, int>> *searchable = new GraphSearchable(p);
             vector<State<pair<int, int> > *> solution = searcher->search(searchable);
 

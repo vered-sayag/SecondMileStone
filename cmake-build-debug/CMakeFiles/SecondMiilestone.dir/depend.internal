@@ -55,7 +55,7 @@ CMakeFiles/SecondMiilestone.dir/PQSearcher.cpp.o
  /home/vered/CLionProjects/SecondMileStone/PQSearcher.cpp
  /home/vered/CLionProjects/SecondMileStone/PQSearcher.h
 CMakeFiles/SecondMiilestone.dir/main.cpp.o
- /home/vered/CLionProjects/SecondMileStone/BFSSearcher.h
+ /home/vered/CLionProjects/SecondMileStone/BestFirstSearcher.h
  /home/vered/CLionProjects/SecondMileStone/CacheManager.h
  /home/vered/CLionProjects/SecondMileStone/ClientHandler.h
  /home/vered/CLionProjects/SecondMileStone/FileCacheManager.h

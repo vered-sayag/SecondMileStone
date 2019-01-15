@@ -94,6 +94,9 @@
 		<Unit filename="/home/vered/CLionProjects/SecondMileStone/BFSSearcher.h">
 			<Option target="SecondMiilestone"/>
 		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/BestFirstSearcher.h">
+			<Option target="SecondMiilestone"/>
+		</Unit>
 		<Unit filename="/home/vered/CLionProjects/SecondMileStone/CacheManager.h">
 			<Option target="SecondMiilestone"/>
 		</Unit>

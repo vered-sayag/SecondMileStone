@@ -6,11 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/vered/CLionProjects/SecondMileStone/BFSSearcher.cpp
-BFSSearcher.h
-/home/vered/CLionProjects/SecondMileStone/BFSSearcher.h
-
-/home/vered/CLionProjects/SecondMileStone/BFSSearcher.h
+/home/vered/CLionProjects/SecondMileStone/BestFirstSearcher.h
 string
 -
 Searchable.h
@@ -133,12 +129,12 @@ Searcher.h
 /home/vered/CLionProjects/SecondMileStone/Searcher.h
 State.h
 /home/vered/CLionProjects/SecondMileStone/State.h
-BFSSearcher.h
-/home/vered/CLionProjects/SecondMileStone/BFSSearcher.h
 Searchable.h
 /home/vered/CLionProjects/SecondMileStone/Searchable.h
 GraphSearchable.h
 /home/vered/CLionProjects/SecondMileStone/GraphSearchable.h
+BestFirstSearcher.h
+/home/vered/CLionProjects/SecondMileStone/BestFirstSearcher.h
 
 /home/vered/CLionProjects/SecondMileStone/Searchable.h
 vector
@@ -175,8 +171,8 @@ MyParallelServer.h
 /home/vered/CLionProjects/SecondMileStone/MyParallelServer.h
 SearchSolver.h
 /home/vered/CLionProjects/SecondMileStone/SearchSolver.h
-BFSSearcher.h
-/home/vered/CLionProjects/SecondMileStone/BFSSearcher.h
+BestFirstSearcher.h
+/home/vered/CLionProjects/SecondMileStone/BestFirstSearcher.h
 
 /home/vered/CLionProjects/SecondMileStone/testSolver.h
 Solver.h

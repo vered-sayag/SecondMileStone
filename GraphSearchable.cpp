@@ -2,6 +2,7 @@
 // Created by davidregev on 10/01/19.
 //
 
+#include <cmath>
 #include "GraphSearchable.h"
 
 GraphSearchable::GraphSearchable(const vector<vector<double> > &table) {
@@ -81,12 +82,12 @@ vector<State<pair<int, int>> *> GraphSearchable::getAllPossibleState(State<pair<
     // validation checking
     int row = cur->getState().first;
     int column = cur->getState().second;
-    int curHeuristic = abs(goal.getState().first - row) + abs(goal.getState().second - column);
+    int curHeuristic = abs(goal->getState().first - row) + abs(goal->getState().second - column);
     int nextHeuristic, combinedHeuristic;
 
     // s is not in the last row
     if (row + 1 < numOfRows ) {
-        nextHeuristic =  abs(goal.getState().first - row + 1) + abs(goal.getState().second - column);
+        nextHeuristic =  abs(goal->getState().first - row + 1) + abs(goal->getState().second - column);
         combinedHeuristic = abs(nextHeuristic - curHeuristic);
         pair<int, int> tempPair = {row + 1, column};
         double tempCost = matrix[row + 1][column] ;
@@ -97,7 +98,7 @@ vector<State<pair<int, int>> *> GraphSearchable::getAllPossibleState(State<pair<
 
     // s is not in the first row
     if (row - 1 >= 0) {
-        nextHeuristic =  abs(goal.getState().first - row - 1) + abs(goal.getState().second - column);
+        nextHeuristic =  abs(goal->getState().first - row - 1) + abs(goal->getState().second - column);
         combinedHeuristic = abs(nextHeuristic - curHeuristic);
         pair<int, int> tempPair = {row - 1, column};
         double tempCost = matrix[row - 1][column] ;
@@ -108,7 +109,7 @@ vector<State<pair<int, int>> *> GraphSearchable::getAllPossibleState(State<pair<
 
     // s is not in the first column
     if (column - 1 >= 0) {
-        nextHeuristic =  abs(goal.getState().first - row) + abs(goal.getState().second - column - 1);
+        nextHeuristic =  abs(goal->getState().first - row) + abs(goal->getState().second - column - 1);
         combinedHeuristic = abs(nextHeuristic - curHeuristic);
         pair<int, int> tempPair = {row, column - 1};
         double tempCost = matrix[row][column - 1];
@@ -119,7 +120,7 @@ vector<State<pair<int, int>> *> GraphSearchable::getAllPossibleState(State<pair<
 
     // s is not in the last column
     if (column + 1 < numOfColumns) {
-        nextHeuristic =  abs(goal.getState().first - row) + abs(goal.getState().second - column + 1);
+        nextHeuristic =  abs(goal->getState().first - row) + abs(goal->getState().second - column + 1);
         combinedHeuristic = abs(nextHeuristic - curHeuristic);
         pair<int, int> tempPair = {row, column + 1};
         double tempCost = matrix[row][column + 1];
