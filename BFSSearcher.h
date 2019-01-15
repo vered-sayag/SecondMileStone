@@ -29,7 +29,9 @@ public:
             closedList.push(minState);
             //if we got to the goal
             if (*minState == *goal) {
-                return backTrace(init, minState );
+                vector<State<T> *> output = backTrace(init, minState);
+                clearAll(output);
+                return output;
             }
             //todo: checking if needed to change the constructor
 //            State<T> *father = new State<T>(*minState);
@@ -43,11 +45,14 @@ public:
                         openList.erase(item);
                         openList.push(successors[i]);
                     }
+                } else {
+                    delete (successors[i]);
                 }
             }
         }
 
         vector<State<T> *> emptyVector;
+        clearAll(emptyVector);
         return emptyVector;
     }
 
@@ -62,7 +67,7 @@ public:
         }
         trace.push_back(init);
 
-        for (int i= trace.size()-1; i>=0;i--){
+        for (int i = trace.size() - 1; i >= 0; i--) {
             output.push_back(trace[i]);
         }
         return output;
@@ -71,6 +76,27 @@ public:
 
     int getNumOfNodesEvaluated() {
         return this->numOfNodesEvaluated;
+    }
+
+    void clearAll(vector<State<T> *> output) {
+        State<T> *temp;
+        while (!openList.empty()) {
+            delete (openList.pop());
+        }
+        while (!closedList.empty()) {
+
+            temp = closedList.pop();
+
+            for (int i = 0; i < output.size(); i++) {
+                if (output[i] == temp) {
+                    break;
+                }
+                if (i == output.size() - 1) {
+                    delete (temp);
+                }
+            }
+
+        }
     }
 
 };

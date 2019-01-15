@@ -15,6 +15,7 @@ public:
     virtual State<T>* getInitialState() = 0;
     virtual State<T>* getGoalState() = 0;
     virtual vector< State<T> *> getAllPossibleState(State<T> *s) = 0;
+    virtual ~Searchable(){}
 };
 
 

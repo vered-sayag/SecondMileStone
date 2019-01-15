@@ -80,7 +80,8 @@ public:
         // pop all states to a vector and checking if the state exists in pq
         while (!empty()) {
             tempState = pop();
-            if (*tempState == *state) {
+            if (tempState == state) {
+                delete (tempState);
                 break;
             }
             states.push_back(tempState);

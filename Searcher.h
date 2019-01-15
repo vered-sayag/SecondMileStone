@@ -17,6 +17,7 @@ public:
     virtual int getNumOfNodesEvaluated() {
         return numOfNodesEvaluated;
     }
+    virtual ~Searcher(){}
 };
 
 
