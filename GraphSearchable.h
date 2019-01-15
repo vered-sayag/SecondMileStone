@@ -31,6 +31,9 @@ public:
     ~GraphSearchable(){
         delete(goal);
     }
+
+    vector< State <pair<int, int>> *> getAllPossibleState(State<pair<int, int>> *cur, State<pair<int, int>> *target);
+
 };
 
 

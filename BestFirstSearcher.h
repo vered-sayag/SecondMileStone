@@ -10,8 +10,10 @@
 #include "Searcher.h"
 #include "MyPriorityQueue.h"
 
+using namespace std;
+
 template<class T>
-class BFSSearcher : public Searcher<T, vector<State<T> *>> {
+class BestFirstSearcher : public Searcher<T, vector<State<T> *>> {
     MyPriorityQueue<T> openList;
     MyPriorityQueue<T> closedList;
 
@@ -29,12 +31,9 @@ public:
             closedList.push(minState);
             //if we got to the goal
             if (*minState == *goal) {
-                vector<State<T> *> output = backTrace(init, minState);
-                clearAll(output);
-                return output;
+                return backTrace(init, minState);
             }
-            //todo: checking if needed to change the constructor
-//            State<T> *father = new State<T>(*minState);
+
             vector<State<T> *> successors = searchable->getAllPossibleState(minState);
             for (int i = 0; i < successors.size(); ++i) {
                 if (!openList.isExist(successors[i]) && !closedList.isExist(successors[i])) {
@@ -44,17 +43,12 @@ public:
                     if (successors[i]->getCost() < item->getCost()) {
                         openList.erase(item);
                         openList.push(successors[i]);
-                    }else{
-                        delete (successors[i]);
                     }
-                } else {
-                    delete (successors[i]);
                 }
             }
         }
 
         vector<State<T> *> emptyVector;
-        clearAll(emptyVector);
         return emptyVector;
     }
 
@@ -69,33 +63,18 @@ public:
         }
         trace.push_back(init);
 
-        for (int i = trace.size() - 1; i >= 0; i--) {
+        for (int i= trace.size()-1; i>=0;i--){
             output.push_back(trace[i]);
         }
         return output;
     }
 
 
-    void clearAll(vector<State<T> *> output) {
-        State<T> *temp;
-        while (!openList.empty()) {
-            delete (openList.pop());
-        }
-        while (!closedList.empty()) {
-
-            temp = closedList.pop();
-
-            for (int i = 0; i < output.size(); i++) {
-                if (output[i] == temp) {
-                    break;
-                }
-                if (i == output.size() - 1) {
-                    delete (temp);
-                }
-            }
-
-        }
+    int getNumOfNodesEvaluated() {
+        return this->numOfNodesEvaluated;
     }
 
 };
+
+
 #endif //SECONDMIILESTONE_BFSSEARCHER_H
