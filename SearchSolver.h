@@ -47,11 +47,8 @@ namespace server_side {
                     ans = ans + "Right";
                 }
 
-                delete (solution[i]);
                 if (i != solution.size() - 2) {
                     ans = ans + ",";
-                } else {
-                    delete (solution[i + 1]);
                 }
 
             }

@@ -30,7 +30,6 @@ public:
             //if we got to the goal
             if (*minState == *goal) {
                 vector<State<T> *> output = backTrace(init, minState);
-                clearAll(output);
                 return output;
             }
             //todo: checking if needed to change the constructor
@@ -44,7 +43,7 @@ public:
                     if (successors[i]->getCost() < item->getCost()) {
                         openList.erase(item);
                         openList.push(successors[i]);
-                    }else{
+                    } else {
                         delete (successors[i]);
                     }
                 } else {
@@ -54,7 +53,6 @@ public:
         }
 
         vector<State<T> *> emptyVector;
-        clearAll(emptyVector);
         return emptyVector;
     }
 
@@ -80,26 +78,17 @@ public:
         return this->numOfNodesEvaluated;
     }
 
-    void clearAll(vector<State<T> *> output) {
-        State<T> *temp;
+     ~BFSSearcher() {
         while (!openList.empty()) {
             delete (openList.pop());
         }
         while (!closedList.empty()) {
 
-            temp = closedList.pop();
-
-            for (int i = 0; i < output.size(); i++) {
-                if (output[i] == temp) {
-                    break;
-                }
-                if (i == output.size() - 1) {
-                    delete (temp);
-                }
-            }
-
+            delete (closedList.pop());
         }
+
     }
+
 
 };
 
