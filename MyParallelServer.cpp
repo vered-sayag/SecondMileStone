@@ -38,13 +38,8 @@ void server_side::MyParallelServer::unique(int socket, bool *shouldStop, ClientH
     clilen = sizeof(cli_addr);
 
 
-    while (!*shouldStop) {
+    while (true) {
 
-
-        timeval timeout;
-        timeout.tv_sec = 10;
-        timeout.tv_usec = 0;
-        setsockopt(socketFd, SOL_SOCKET, SO_RCVTIMEO, (char *) &timeout, sizeof(timeout));
         //accept actual connection from the client
 
         newsockfd = accept(socketFd, (struct sockaddr *) &cli_addr, (socklen_t *) &clilen);
@@ -70,6 +65,10 @@ void server_side::MyParallelServer::unique(int socket, bool *shouldStop, ClientH
         pthread_create(&trid, nullptr, thread_CallClientHandler, callClientHandlerData);
         trids.push_back(trid);
 
+        timeval timeout;
+        timeout.tv_sec = 1;
+        timeout.tv_usec = 0;
+        setsockopt(socketFd, SOL_SOCKET, SO_RCVTIMEO, (char *) &timeout, sizeof(timeout));
 
     }
 

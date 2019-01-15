@@ -1,5 +1,4 @@
 #include "Main.h"
-#include "testSolver.h"
 #include "MyClientHandler.h"
 #include "MyParallelServer.h"
 #include "SearchSolver.h"

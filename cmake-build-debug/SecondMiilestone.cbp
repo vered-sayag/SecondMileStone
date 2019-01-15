@@ -88,7 +88,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/vered/CLionProjects/SecondMileStone/BFSSearcher.cpp">
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/AStarSearcher.h">
 			<Option target="SecondMiilestone"/>
 		</Unit>
 		<Unit filename="/home/vered/CLionProjects/SecondMileStone/BFSSearcher.h">
@@ -130,9 +130,6 @@
 		<Unit filename="/home/vered/CLionProjects/SecondMileStone/MyParallelServer.h">
 			<Option target="SecondMiilestone"/>
 		</Unit>
-		<Unit filename="/home/vered/CLionProjects/SecondMileStone/MyPriorityQueue.cpp">
-			<Option target="SecondMiilestone"/>
-		</Unit>
 		<Unit filename="/home/vered/CLionProjects/SecondMileStone/MyPriorityQueue.h">
 			<Option target="SecondMiilestone"/>
 		</Unit>
@@ -152,9 +149,6 @@
 			<Option target="SecondMiilestone"/>
 		</Unit>
 		<Unit filename="/home/vered/CLionProjects/SecondMileStone/MyTestClientHandler.h">
-			<Option target="SecondMiilestone"/>
-		</Unit>
-		<Unit filename="/home/vered/CLionProjects/SecondMileStone/PQSearcher.cpp">
 			<Option target="SecondMiilestone"/>
 		</Unit>
 		<Unit filename="/home/vered/CLionProjects/SecondMileStone/PQSearcher.h">
@@ -182,9 +176,6 @@
 			<Option target="SecondMiilestone"/>
 		</Unit>
 		<Unit filename="/home/vered/CLionProjects/SecondMileStone/main.cpp">
-			<Option target="SecondMiilestone"/>
-		</Unit>
-		<Unit filename="/home/vered/CLionProjects/SecondMileStone/testSolver.h">
 			<Option target="SecondMiilestone"/>
 		</Unit>
 		<Unit filename="/home/vered/CLionProjects/SecondMileStone/CMakeLists.txt">

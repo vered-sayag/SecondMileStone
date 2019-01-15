@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+/home/vered/CLionProjects/SecondMileStone/AStarSearcher.h
+string
+-
+Searchable.h
+/home/vered/CLionProjects/SecondMileStone/Searchable.h
+Searcher.h
+/home/vered/CLionProjects/SecondMileStone/Searcher.h
+MyPriorityQueue.h
+/home/vered/CLionProjects/SecondMileStone/MyPriorityQueue.h
+
 /home/vered/CLionProjects/SecondMileStone/BestFirstSearcher.h
 string
 -
@@ -135,6 +145,8 @@ GraphSearchable.h
 /home/vered/CLionProjects/SecondMileStone/GraphSearchable.h
 BestFirstSearcher.h
 /home/vered/CLionProjects/SecondMileStone/BestFirstSearcher.h
+AStarSearcher.h
+/home/vered/CLionProjects/SecondMileStone/AStarSearcher.h
 
 /home/vered/CLionProjects/SecondMileStone/Searchable.h
 vector
@@ -163,8 +175,6 @@ string
 /home/vered/CLionProjects/SecondMileStone/main.cpp
 Main.h
 /home/vered/CLionProjects/SecondMileStone/Main.h
-testSolver.h
-/home/vered/CLionProjects/SecondMileStone/testSolver.h
 MyClientHandler.h
 /home/vered/CLionProjects/SecondMileStone/MyClientHandler.h
 MyParallelServer.h
@@ -173,12 +183,4 @@ SearchSolver.h
 /home/vered/CLionProjects/SecondMileStone/SearchSolver.h
 BestFirstSearcher.h
 /home/vered/CLionProjects/SecondMileStone/BestFirstSearcher.h
-
-/home/vered/CLionProjects/SecondMileStone/testSolver.h
-Solver.h
-/home/vered/CLionProjects/SecondMileStone/Solver.h
-string
--
-vector
--
 

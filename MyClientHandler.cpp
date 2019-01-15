@@ -10,6 +10,7 @@
 #include "MyTestClientHandler.h"
 
 void server_side::MyClientHandler::handleClient(int socket) {
+
     string line = "";
     string problem = "";
     string ans;
@@ -45,7 +46,7 @@ void server_side::MyClientHandler::handleClient(int socket) {
     }
 
     unsigned long coloms = 0;
-    unsigned long rows = Vproblem.size();
+    unsigned long rows = Vproblem.size()-2;
     for (int j = 0; j < rows; j++) {
         if (j == 0) {
             coloms = Vproblem[j].size();
@@ -57,35 +58,7 @@ void server_side::MyClientHandler::handleClient(int socket) {
     }
 
 
-    i++;
-    line = "";
-    int counter = 2;
-    while (counter > 0) {
-        if (numBytesRead > 0) {
-            for (; i < numBytesRead; i++) {
-                char c = buf[i];
-                if (c == '\n') {
-                    if (line.length() > 0) {
-                        if (counter == 0) {
-                            break;
-                        }
-                        counter--;
-                        Vproblem.push_back(splitByComma(line));
-                        problem += line + ";";
-                        line = "";
-                    }
-                } else line += c;
-            }
-        } else {
-            if (errno == EWOULDBLOCK) {
-                continue;
-            }
-            close(socket);
-            return;
-        }
-        i = 0;
-        numBytesRead = recv(socket, buf, sizeof(buf), 0);
-    }
+
     if (Vproblem[Vproblem.size() - 1].size() != 2 || Vproblem[Vproblem.size() - 2].size() != 2
         || Vproblem[Vproblem.size() - 1][0] != (int) Vproblem[Vproblem.size() - 1][0]
         || Vproblem[Vproblem.size() - 1][1] != (int) Vproblem[Vproblem.size() - 1][1]

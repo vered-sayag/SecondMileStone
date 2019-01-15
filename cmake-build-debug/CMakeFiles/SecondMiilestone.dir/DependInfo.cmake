@@ -4,16 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/vered/CLionProjects/SecondMileStone/BFSSearcher.cpp" "/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/BFSSearcher.cpp.o"
   "/home/vered/CLionProjects/SecondMileStone/FileCacheManager.cpp" "/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/FileCacheManager.cpp.o"
   "/home/vered/CLionProjects/SecondMileStone/GraphSearchable.cpp" "/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.o"
   "/home/vered/CLionProjects/SecondMileStone/MyClientHandler.cpp" "/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/MyClientHandler.cpp.o"
   "/home/vered/CLionProjects/SecondMileStone/MyParallelServer.cpp" "/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/MyParallelServer.cpp.o"
-  "/home/vered/CLionProjects/SecondMileStone/MyPriorityQueue.cpp" "/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/MyPriorityQueue.cpp.o"
   "/home/vered/CLionProjects/SecondMileStone/MySerialServer.cpp" "/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/MySerialServer.cpp.o"
   "/home/vered/CLionProjects/SecondMileStone/MyTCPserver.cpp" "/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/MyTCPserver.cpp.o"
   "/home/vered/CLionProjects/SecondMileStone/MyTestClientHandler.cpp" "/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/MyTestClientHandler.cpp.o"
-  "/home/vered/CLionProjects/SecondMileStone/PQSearcher.cpp" "/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/PQSearcher.cpp.o"
   "/home/vered/CLionProjects/SecondMileStone/main.cpp" "/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

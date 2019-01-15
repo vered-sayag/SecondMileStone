@@ -13,6 +13,7 @@
 #include "Searchable.h"
 #include "GraphSearchable.h"
 #include "BestFirstSearcher.h"
+#include "AStarSearcher.h"
 
 using namespace std;
 namespace server_side {
@@ -20,7 +21,7 @@ namespace server_side {
     public:
 
         string solve(vector<vector<double >> p) {
-            Searcher<pair<int, int>, vector<State<pair<int, int> > *>> *searcher = new BestFirstSearcher<pair<int, int>>();
+            Searcher<pair<int, int>, vector<State<pair<int, int> > *>> *searcher = new AStarSearcher<pair<int, int>>();
             Searchable<pair<int, int>> *searchable = new GraphSearchable(p);
             vector<State<pair<int, int> > *> solution = searcher->search(searchable);
 
@@ -55,6 +56,7 @@ namespace server_side {
                 }
 
             }
+            //cout<< searcher->getNumOfNodesEvaluated()<<endl;
             delete (searcher);
             delete (searchable);
 

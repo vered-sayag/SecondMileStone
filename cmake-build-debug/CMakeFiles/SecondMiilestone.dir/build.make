@@ -70,22 +70,9 @@ CMakeFiles/SecondMiilestone.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SecondMiilestone.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vered/CLionProjects/SecondMileStone/main.cpp -o CMakeFiles/SecondMiilestone.dir/main.cpp.s
 
-CMakeFiles/SecondMiilestone.dir/BFSSearcher.cpp.o: CMakeFiles/SecondMiilestone.dir/flags.make
-CMakeFiles/SecondMiilestone.dir/BFSSearcher.cpp.o: ../BFSSearcher.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SecondMiilestone.dir/BFSSearcher.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SecondMiilestone.dir/BFSSearcher.cpp.o -c /home/vered/CLionProjects/SecondMileStone/BFSSearcher.cpp
-
-CMakeFiles/SecondMiilestone.dir/BFSSearcher.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SecondMiilestone.dir/BFSSearcher.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vered/CLionProjects/SecondMileStone/BFSSearcher.cpp > CMakeFiles/SecondMiilestone.dir/BFSSearcher.cpp.i
-
-CMakeFiles/SecondMiilestone.dir/BFSSearcher.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SecondMiilestone.dir/BFSSearcher.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vered/CLionProjects/SecondMileStone/BFSSearcher.cpp -o CMakeFiles/SecondMiilestone.dir/BFSSearcher.cpp.s
-
 CMakeFiles/SecondMiilestone.dir/MyTestClientHandler.cpp.o: CMakeFiles/SecondMiilestone.dir/flags.make
 CMakeFiles/SecondMiilestone.dir/MyTestClientHandler.cpp.o: ../MyTestClientHandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SecondMiilestone.dir/MyTestClientHandler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SecondMiilestone.dir/MyTestClientHandler.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SecondMiilestone.dir/MyTestClientHandler.cpp.o -c /home/vered/CLionProjects/SecondMileStone/MyTestClientHandler.cpp
 
 CMakeFiles/SecondMiilestone.dir/MyTestClientHandler.cpp.i: cmake_force
@@ -98,7 +85,7 @@ CMakeFiles/SecondMiilestone.dir/MyTestClientHandler.cpp.s: cmake_force
 
 CMakeFiles/SecondMiilestone.dir/MySerialServer.cpp.o: CMakeFiles/SecondMiilestone.dir/flags.make
 CMakeFiles/SecondMiilestone.dir/MySerialServer.cpp.o: ../MySerialServer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SecondMiilestone.dir/MySerialServer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SecondMiilestone.dir/MySerialServer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SecondMiilestone.dir/MySerialServer.cpp.o -c /home/vered/CLionProjects/SecondMileStone/MySerialServer.cpp
 
 CMakeFiles/SecondMiilestone.dir/MySerialServer.cpp.i: cmake_force
@@ -111,7 +98,7 @@ CMakeFiles/SecondMiilestone.dir/MySerialServer.cpp.s: cmake_force
 
 CMakeFiles/SecondMiilestone.dir/FileCacheManager.cpp.o: CMakeFiles/SecondMiilestone.dir/flags.make
 CMakeFiles/SecondMiilestone.dir/FileCacheManager.cpp.o: ../FileCacheManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SecondMiilestone.dir/FileCacheManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SecondMiilestone.dir/FileCacheManager.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SecondMiilestone.dir/FileCacheManager.cpp.o -c /home/vered/CLionProjects/SecondMileStone/FileCacheManager.cpp
 
 CMakeFiles/SecondMiilestone.dir/FileCacheManager.cpp.i: cmake_force
@@ -124,7 +111,7 @@ CMakeFiles/SecondMiilestone.dir/FileCacheManager.cpp.s: cmake_force
 
 CMakeFiles/SecondMiilestone.dir/MyClientHandler.cpp.o: CMakeFiles/SecondMiilestone.dir/flags.make
 CMakeFiles/SecondMiilestone.dir/MyClientHandler.cpp.o: ../MyClientHandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SecondMiilestone.dir/MyClientHandler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SecondMiilestone.dir/MyClientHandler.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SecondMiilestone.dir/MyClientHandler.cpp.o -c /home/vered/CLionProjects/SecondMileStone/MyClientHandler.cpp
 
 CMakeFiles/SecondMiilestone.dir/MyClientHandler.cpp.i: cmake_force
@@ -137,7 +124,7 @@ CMakeFiles/SecondMiilestone.dir/MyClientHandler.cpp.s: cmake_force
 
 CMakeFiles/SecondMiilestone.dir/MyParallelServer.cpp.o: CMakeFiles/SecondMiilestone.dir/flags.make
 CMakeFiles/SecondMiilestone.dir/MyParallelServer.cpp.o: ../MyParallelServer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SecondMiilestone.dir/MyParallelServer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SecondMiilestone.dir/MyParallelServer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SecondMiilestone.dir/MyParallelServer.cpp.o -c /home/vered/CLionProjects/SecondMileStone/MyParallelServer.cpp
 
 CMakeFiles/SecondMiilestone.dir/MyParallelServer.cpp.i: cmake_force
@@ -150,7 +137,7 @@ CMakeFiles/SecondMiilestone.dir/MyParallelServer.cpp.s: cmake_force
 
 CMakeFiles/SecondMiilestone.dir/MyTCPserver.cpp.o: CMakeFiles/SecondMiilestone.dir/flags.make
 CMakeFiles/SecondMiilestone.dir/MyTCPserver.cpp.o: ../MyTCPserver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SecondMiilestone.dir/MyTCPserver.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SecondMiilestone.dir/MyTCPserver.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SecondMiilestone.dir/MyTCPserver.cpp.o -c /home/vered/CLionProjects/SecondMileStone/MyTCPserver.cpp
 
 CMakeFiles/SecondMiilestone.dir/MyTCPserver.cpp.i: cmake_force
@@ -163,7 +150,7 @@ CMakeFiles/SecondMiilestone.dir/MyTCPserver.cpp.s: cmake_force
 
 CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.o: CMakeFiles/SecondMiilestone.dir/flags.make
 CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.o: ../GraphSearchable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.o -c /home/vered/CLionProjects/SecondMileStone/GraphSearchable.cpp
 
 CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.i: cmake_force
@@ -174,51 +161,21 @@ CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vered/CLionProjects/SecondMileStone/GraphSearchable.cpp -o CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.s
 
-CMakeFiles/SecondMiilestone.dir/MyPriorityQueue.cpp.o: CMakeFiles/SecondMiilestone.dir/flags.make
-CMakeFiles/SecondMiilestone.dir/MyPriorityQueue.cpp.o: ../MyPriorityQueue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SecondMiilestone.dir/MyPriorityQueue.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SecondMiilestone.dir/MyPriorityQueue.cpp.o -c /home/vered/CLionProjects/SecondMileStone/MyPriorityQueue.cpp
-
-CMakeFiles/SecondMiilestone.dir/MyPriorityQueue.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SecondMiilestone.dir/MyPriorityQueue.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vered/CLionProjects/SecondMileStone/MyPriorityQueue.cpp > CMakeFiles/SecondMiilestone.dir/MyPriorityQueue.cpp.i
-
-CMakeFiles/SecondMiilestone.dir/MyPriorityQueue.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SecondMiilestone.dir/MyPriorityQueue.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vered/CLionProjects/SecondMileStone/MyPriorityQueue.cpp -o CMakeFiles/SecondMiilestone.dir/MyPriorityQueue.cpp.s
-
-CMakeFiles/SecondMiilestone.dir/PQSearcher.cpp.o: CMakeFiles/SecondMiilestone.dir/flags.make
-CMakeFiles/SecondMiilestone.dir/PQSearcher.cpp.o: ../PQSearcher.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SecondMiilestone.dir/PQSearcher.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SecondMiilestone.dir/PQSearcher.cpp.o -c /home/vered/CLionProjects/SecondMileStone/PQSearcher.cpp
-
-CMakeFiles/SecondMiilestone.dir/PQSearcher.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SecondMiilestone.dir/PQSearcher.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vered/CLionProjects/SecondMileStone/PQSearcher.cpp > CMakeFiles/SecondMiilestone.dir/PQSearcher.cpp.i
-
-CMakeFiles/SecondMiilestone.dir/PQSearcher.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SecondMiilestone.dir/PQSearcher.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vered/CLionProjects/SecondMileStone/PQSearcher.cpp -o CMakeFiles/SecondMiilestone.dir/PQSearcher.cpp.s
-
 # Object files for target SecondMiilestone
 SecondMiilestone_OBJECTS = \
 "CMakeFiles/SecondMiilestone.dir/main.cpp.o" \
-"CMakeFiles/SecondMiilestone.dir/BFSSearcher.cpp.o" \
 "CMakeFiles/SecondMiilestone.dir/MyTestClientHandler.cpp.o" \
 "CMakeFiles/SecondMiilestone.dir/MySerialServer.cpp.o" \
 "CMakeFiles/SecondMiilestone.dir/FileCacheManager.cpp.o" \
 "CMakeFiles/SecondMiilestone.dir/MyClientHandler.cpp.o" \
 "CMakeFiles/SecondMiilestone.dir/MyParallelServer.cpp.o" \
 "CMakeFiles/SecondMiilestone.dir/MyTCPserver.cpp.o" \
-"CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.o" \
-"CMakeFiles/SecondMiilestone.dir/MyPriorityQueue.cpp.o" \
-"CMakeFiles/SecondMiilestone.dir/PQSearcher.cpp.o"
+"CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.o"
 
 # External object files for target SecondMiilestone
 SecondMiilestone_EXTERNAL_OBJECTS =
 
 SecondMiilestone: CMakeFiles/SecondMiilestone.dir/main.cpp.o
-SecondMiilestone: CMakeFiles/SecondMiilestone.dir/BFSSearcher.cpp.o
 SecondMiilestone: CMakeFiles/SecondMiilestone.dir/MyTestClientHandler.cpp.o
 SecondMiilestone: CMakeFiles/SecondMiilestone.dir/MySerialServer.cpp.o
 SecondMiilestone: CMakeFiles/SecondMiilestone.dir/FileCacheManager.cpp.o
@@ -226,11 +183,9 @@ SecondMiilestone: CMakeFiles/SecondMiilestone.dir/MyClientHandler.cpp.o
 SecondMiilestone: CMakeFiles/SecondMiilestone.dir/MyParallelServer.cpp.o
 SecondMiilestone: CMakeFiles/SecondMiilestone.dir/MyTCPserver.cpp.o
 SecondMiilestone: CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.o
-SecondMiilestone: CMakeFiles/SecondMiilestone.dir/MyPriorityQueue.cpp.o
-SecondMiilestone: CMakeFiles/SecondMiilestone.dir/PQSearcher.cpp.o
 SecondMiilestone: CMakeFiles/SecondMiilestone.dir/build.make
 SecondMiilestone: CMakeFiles/SecondMiilestone.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable SecondMiilestone"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable SecondMiilestone"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SecondMiilestone.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

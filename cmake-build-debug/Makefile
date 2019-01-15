@@ -123,33 +123,6 @@ SecondMiilestone/fast:
 	$(MAKE) -f CMakeFiles/SecondMiilestone.dir/build.make CMakeFiles/SecondMiilestone.dir/build
 .PHONY : SecondMiilestone/fast
 
-BFSSearcher.o: BFSSearcher.cpp.o
-
-.PHONY : BFSSearcher.o
-
-# target to build an object file
-BFSSearcher.cpp.o:
-	$(MAKE) -f CMakeFiles/SecondMiilestone.dir/build.make CMakeFiles/SecondMiilestone.dir/BFSSearcher.cpp.o
-.PHONY : BFSSearcher.cpp.o
-
-BFSSearcher.i: BFSSearcher.cpp.i
-
-.PHONY : BFSSearcher.i
-
-# target to preprocess a source file
-BFSSearcher.cpp.i:
-	$(MAKE) -f CMakeFiles/SecondMiilestone.dir/build.make CMakeFiles/SecondMiilestone.dir/BFSSearcher.cpp.i
-.PHONY : BFSSearcher.cpp.i
-
-BFSSearcher.s: BFSSearcher.cpp.s
-
-.PHONY : BFSSearcher.s
-
-# target to generate assembly for a file
-BFSSearcher.cpp.s:
-	$(MAKE) -f CMakeFiles/SecondMiilestone.dir/build.make CMakeFiles/SecondMiilestone.dir/BFSSearcher.cpp.s
-.PHONY : BFSSearcher.cpp.s
-
 FileCacheManager.o: FileCacheManager.cpp.o
 
 .PHONY : FileCacheManager.o
@@ -258,33 +231,6 @@ MyParallelServer.cpp.s:
 	$(MAKE) -f CMakeFiles/SecondMiilestone.dir/build.make CMakeFiles/SecondMiilestone.dir/MyParallelServer.cpp.s
 .PHONY : MyParallelServer.cpp.s
 
-MyPriorityQueue.o: MyPriorityQueue.cpp.o
-
-.PHONY : MyPriorityQueue.o
-
-# target to build an object file
-MyPriorityQueue.cpp.o:
-	$(MAKE) -f CMakeFiles/SecondMiilestone.dir/build.make CMakeFiles/SecondMiilestone.dir/MyPriorityQueue.cpp.o
-.PHONY : MyPriorityQueue.cpp.o
-
-MyPriorityQueue.i: MyPriorityQueue.cpp.i
-
-.PHONY : MyPriorityQueue.i
-
-# target to preprocess a source file
-MyPriorityQueue.cpp.i:
-	$(MAKE) -f CMakeFiles/SecondMiilestone.dir/build.make CMakeFiles/SecondMiilestone.dir/MyPriorityQueue.cpp.i
-.PHONY : MyPriorityQueue.cpp.i
-
-MyPriorityQueue.s: MyPriorityQueue.cpp.s
-
-.PHONY : MyPriorityQueue.s
-
-# target to generate assembly for a file
-MyPriorityQueue.cpp.s:
-	$(MAKE) -f CMakeFiles/SecondMiilestone.dir/build.make CMakeFiles/SecondMiilestone.dir/MyPriorityQueue.cpp.s
-.PHONY : MyPriorityQueue.cpp.s
-
 MySerialServer.o: MySerialServer.cpp.o
 
 .PHONY : MySerialServer.o
@@ -366,33 +312,6 @@ MyTestClientHandler.cpp.s:
 	$(MAKE) -f CMakeFiles/SecondMiilestone.dir/build.make CMakeFiles/SecondMiilestone.dir/MyTestClientHandler.cpp.s
 .PHONY : MyTestClientHandler.cpp.s
 
-PQSearcher.o: PQSearcher.cpp.o
-
-.PHONY : PQSearcher.o
-
-# target to build an object file
-PQSearcher.cpp.o:
-	$(MAKE) -f CMakeFiles/SecondMiilestone.dir/build.make CMakeFiles/SecondMiilestone.dir/PQSearcher.cpp.o
-.PHONY : PQSearcher.cpp.o
-
-PQSearcher.i: PQSearcher.cpp.i
-
-.PHONY : PQSearcher.i
-
-# target to preprocess a source file
-PQSearcher.cpp.i:
-	$(MAKE) -f CMakeFiles/SecondMiilestone.dir/build.make CMakeFiles/SecondMiilestone.dir/PQSearcher.cpp.i
-.PHONY : PQSearcher.cpp.i
-
-PQSearcher.s: PQSearcher.cpp.s
-
-.PHONY : PQSearcher.s
-
-# target to generate assembly for a file
-PQSearcher.cpp.s:
-	$(MAKE) -f CMakeFiles/SecondMiilestone.dir/build.make CMakeFiles/SecondMiilestone.dir/PQSearcher.cpp.s
-.PHONY : PQSearcher.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -429,9 +348,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... SecondMiilestone"
 	@echo "... edit_cache"
-	@echo "... BFSSearcher.o"
-	@echo "... BFSSearcher.i"
-	@echo "... BFSSearcher.s"
 	@echo "... FileCacheManager.o"
 	@echo "... FileCacheManager.i"
 	@echo "... FileCacheManager.s"
@@ -444,9 +360,6 @@ help:
 	@echo "... MyParallelServer.o"
 	@echo "... MyParallelServer.i"
 	@echo "... MyParallelServer.s"
-	@echo "... MyPriorityQueue.o"
-	@echo "... MyPriorityQueue.i"
-	@echo "... MyPriorityQueue.s"
 	@echo "... MySerialServer.o"
 	@echo "... MySerialServer.i"
 	@echo "... MySerialServer.s"
@@ -456,9 +369,6 @@ help:
 	@echo "... MyTestClientHandler.o"
 	@echo "... MyTestClientHandler.i"
 	@echo "... MyTestClientHandler.s"
-	@echo "... PQSearcher.o"
-	@echo "... PQSearcher.i"
-	@echo "... PQSearcher.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
