@@ -19,13 +19,13 @@ public:
         State<T> *goal = searchable->getGoalState();
         State<T> *proccessState;
 
-        openList.push(init);
+        this->push(init);
 
-        while(!empty()) {
-            proccessState = openList.pop();
+        while(!this->empty()) {
+            proccessState = this->pop();
 
             if(*proccessState == *goal) {
-                return searchable.backTrace(init, proccessState);
+                return backTrace(init, proccessState);
             }
 
             vector<State<T>*> successors = searchable->getAllPossibleState(proccessState);
@@ -37,21 +37,38 @@ public:
                 }
 
                 // if the successor is in the closed list
-                if (!isExistsVector(successors[i])) {
+                if (!this->isExistVector(successors[i])) {
 
                     // set the ancestor
-                    successors[i].setCameFrom(proccessState);
+//                    successors[i]->setCameFrom(proccessState);
 
                     // insert to the queue
-                    openList.push(successors[i]);
+                    this->openList.push(successors[i]);
 
                     // insert the successor to the closed list
-                    closedList.push_back(successors[i]);
+                    this->closedList.push_back(successors[i]);
                 }
             }
         }
         vector<State<T> *> emptyVector;
         return emptyVector;
+    }
+
+    vector<State<T> *> backTrace(State<T> *init, State<T> *goal) {
+        vector<State<T> *> trace;
+        vector<State<T> *> output;
+        State<T> *tempState = goal;
+
+        while (!(*tempState == *init)) {
+            trace.push_back(tempState);
+            tempState = tempState->getCameFrom();
+        }
+        trace.push_back(init);
+
+        for (int i = trace.size() - 1; i >= 0; i--) {
+            output.push_back(trace[i]);
+        }
+        return output;
     }
 };
 

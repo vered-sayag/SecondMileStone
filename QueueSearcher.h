@@ -8,34 +8,36 @@
 #include <queue>
 #include <vector>
 #include "Searcher.h"
-template <class Solution,class T>
-class QueueSearcher : public Searcher<Solution, T> {
+template <class T, class Solution>
+class QueueSearcher : public Searcher<T, Solution> {
 protected:
     queue<State<T>*> openList;
     vector<State<T>*> closedList;
 
 public:
-    State<T>* pop() {
-        return openList.pop();
+    virtual State<T>* pop() {
+        State<T>* temp = openList.front();
+        openList.pop();
+        return temp;
     }
 
-    State<T>* top() {
-        openList.top();
+    virtual State<T>* top() {
+        return openList.front();
     }
 
-    unsigned long size() {
+    virtual unsigned long size() {
         openList.size();
     }
 
-    void push(State<T>* state) {
+    virtual void push(State<T>* state) {
         openList.push(state);
     }
 
-    bool empty() {
+    virtual bool empty() {
         return openList.empty();
     }
 
-    bool isExistQueue(State<T>* state) {
+    virtual bool isExistQueue(State<T>* state) {
         vector<State<T>*> states;
         State<T> *tempState;
         bool exist = false;
@@ -55,8 +57,13 @@ public:
         return exist;
     }
 
-    bool isExistVector(State<T>* state) {
-        return find(closedList.begin(), closedList.end(), state) != closedList.end());
+    virtual bool isExistVector(State<T>* state) {
+        for ( int i =0; i<closedList.size(); i++){
+            if (*closedList[i] == *state) {
+                return true;
+            }
+        }
+        return false;
     }
 };
 
