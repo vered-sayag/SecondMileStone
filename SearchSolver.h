@@ -10,7 +10,7 @@
 #include "Solver.h"
 #include "Searcher.h"
 #include "State.h"
-#include "BFSSearcher.h"
+#include "BestFirstSearcher.h"
 #include "Searchable.h"
 #include "GraphSearchable.h"
 
