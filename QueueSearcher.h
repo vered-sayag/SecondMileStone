@@ -8,7 +8,7 @@
 #include <queue>
 #include <vector>
 #include "Searcher.h"
-
+template <class Solution,class T>
 class QueueSearcher : public Searcher<Solution, T> {
 protected:
     queue<State<T>*> openList;

@@ -13,44 +13,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d8d56b8e-3a31-408c-9344-82e019b6decc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AStarSearcher.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AStarSearcher.h" beforeDir="false" afterPath="$PROJECT_DIR$/AStarSearcher.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BFSSearcher.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BFSSearcher.h" beforeDir="false" afterPath="$PROJECT_DIR$/BFSSearcher.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DFSSearcher.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyClientHandler.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MyClientHandler.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyParallelServer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MyParallelServer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyPriorityQueue.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PQSearcher.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PriorityQueueSearcher.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchSolver.h" beforeDir="false" afterPath="$PROJECT_DIR$/SearchSolver.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Searchable.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Searchable.h" beforeDir="false" afterPath="$PROJECT_DIR$/Searchable.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Searcher.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/BFSSearcher.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/GraphSearchable.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/MyClientHandler.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/MyClientHandler.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/MyParallelServer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/MyParallelServer.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/MyPriorityQueue.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/PQSearcher.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QueueSearcher.h" beforeDir="false" afterPath="$PROJECT_DIR$/QueueSearcher.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SecondMiilestone.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/SecondMiilestone" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SecondMiilestone" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SecondMiilestone.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SecondMiilestone.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSolver.h" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,26 +40,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SearchSolver.h">
+        <entry file="file://$PROJECT_DIR$/BFSSearcher.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1176">
-              <caret line="67" column="9" lean-forward="true" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
+            <state relative-caret-position="288">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
               <folding>
-                <element signature="e#120#137#0" expanded="true" />
+                <element signature="e#124#140#0" expanded="true" />
+                <element signature="e#219#222#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/QueueSearcher.cpp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/BFSSearcher.h">
+        <entry file="file://$PROJECT_DIR$/QueueSearcher.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+            <state relative-caret-position="144">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
               <folding>
-                <element signature="e#124#140#0" expanded="true" />
-                <element signature="e#219#222#0" expanded="true" />
+                <element signature="e#194#207#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Main.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="32" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -106,19 +85,6 @@
               <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="e#128#143#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyPriorityQueue.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="77" column="28" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
-              <folding>
-                <element signature="e#126#142#0" expanded="true" />
-                <element signature="e#194#203#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -139,8 +105,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="264">
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -155,18 +121,6 @@
               <caret line="50" column="19" lean-forward="true" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
               <folding>
                 <element signature="e#39#68#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MySerialServer.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="e#130#145#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -253,8 +207,9 @@
         <option value="$PROJECT_DIR$/MyClientHandler.cpp" />
         <option value="$PROJECT_DIR$/MySerialServer.cpp" />
         <option value="$PROJECT_DIR$/MyParallelServer.cpp" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/BFSSearcher.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/QueueSearcher.h" />
       </list>
     </option>
   </component>
@@ -337,7 +292,7 @@
       <workItem from="1546959883789" duration="29866000" />
       <workItem from="1547058065260" duration="2978000" />
       <workItem from="1547073484393" duration="48049000" />
-      <workItem from="1547463176384" duration="47663000" />
+      <workItem from="1547463176384" duration="48642000" />
     </task>
     <task id="LOCAL-00001" summary="part b">
       <created>1546967376190</created>
@@ -507,11 +462,25 @@
       <option name="project" value="LOCAL" />
       <updated>1547559588735</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="part c first fixsd">
+      <created>1547565934176</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1547565934176</updated>
+    </task>
+    <task id="LOCAL-00026" summary="part c first fixsd">
+      <created>1547566437281</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1547566437281</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141000000" />
+    <option name="totallyTimeSpent" value="141979000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -622,7 +591,8 @@
     <MESSAGE value="part c first algorithm" />
     <MESSAGE value="part c first memory clean" />
     <MESSAGE value="part c first merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="part c first merge" />
+    <MESSAGE value="part c first fixsd" />
+    <option name="LAST_COMMIT_MESSAGE" value="part c first fixsd" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -679,7 +649,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>13</line>
+          <line>18</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
@@ -953,13 +923,6 @@
     <entry file="file://$PROJECT_DIR$/MyPriorityQueue.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyTestClientHandler.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="706">
@@ -987,21 +950,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/QueueSearcher.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Searchable.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Searcher.cpp">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QueueSearcher.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-644">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/StackSearcher.cpp">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1105,10 +1058,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Main.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="32" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="264">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
@@ -1117,11 +1077,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BFSSearcher.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+        <state relative-caret-position="288">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="e#124#140#0" expanded="true" />
             <element signature="e#219#222#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QueueSearcher.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QueueSearcher.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#194#207#0" expanded="true" />
           </folding>
         </state>
       </provider>
