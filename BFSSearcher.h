@@ -44,6 +44,8 @@ public:
                     if (successors[i]->getCost() < item->getCost()) {
                         openList.erase(item);
                         openList.push(successors[i]);
+                    }else{
+                        delete (successors[i]);
                     }
                 } else {
                     delete (successors[i]);
