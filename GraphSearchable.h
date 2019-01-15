@@ -11,22 +11,22 @@
 
 class GraphSearchable : public Searchable< pair <int, int> > {
     vector< vector< double > > matrix;
-    State< pair< int, int> > init;
-    State< pair< int, int> > goal;
+    State< pair< int, int> >* init;
+    State< pair< int, int> >* goal;
 
 
 public:
-    GraphSearchable(vector<vector<double>> table);
+    GraphSearchable(const vector<vector<double>> &table);
 
-    State< pair<int, int> > getInitialState() {
+    State< pair<int, int> >* getInitialState() {
         return init;
     }
 
-    State< pair<int, int> > getGoalState() {
+    State< pair<int, int> >* getGoalState() {
         return goal;
     }
 
-    vector< State <pair<int, int>> > getAllPossibleState(State<pair<int, int>> s);
+    vector< State <pair<int, int>> *> getAllPossibleState(State<pair<int, int>> *s);
 };
 
 

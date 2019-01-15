@@ -3,6 +3,6 @@ project(SecondMiilestone)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(SecondMiilestone main.cpp Server.h ClientHandler.h MyTestClientHandler.cpp MyTestClientHandler.h Solver.h MySerialServer.cpp MySerialServer.h CacheManager.h FileCacheManager.cpp FileCacheManager.h StringReverse.h Main.h MyClientHandler.cpp MyClientHandler.h testSolver.h MyParallelServer.cpp MyParallelServer.h MyTCPserver.cpp MyTCPserver.h GraphSearchable.cpp GraphSearchable.h Searchable.h Searcher.h State.h BFSSearcher.h BFSSearcher.cpp MyPriorityQueue.cpp MyPriorityQueue.h)
+add_executable(SecondMiilestone main.cpp Server.h ClientHandler.h MyTestClientHandler.cpp MyTestClientHandler.h Solver.h MySerialServer.cpp MySerialServer.h CacheManager.h FileCacheManager.cpp FileCacheManager.h StringReverse.h Main.h MyClientHandler.cpp MyClientHandler.h testSolver.h MyParallelServer.cpp MyParallelServer.h MyTCPserver.cpp MyTCPserver.h GraphSearchable.cpp GraphSearchable.h Searchable.h Searcher.h State.h SearchSolver.h BFSSearcher.h BFSSearcher.cpp MyPriorityQueue.cpp MyPriorityQueue.h PQSearcher.cpp PQSearcher.h SearchSolver.h)
 
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")

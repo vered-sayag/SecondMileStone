@@ -73,6 +73,7 @@ void server_side::MyParallelServer::unique(int socket, bool *shouldStop, ClientH
 
     }
 
+
     for (int i = 0; i < trids.size(); i++) {
         pthread_join(trids[i], nullptr);
     }

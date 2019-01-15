@@ -5,35 +5,34 @@
 #ifndef SECONDMIILESTONE_MYPRIORITYQUEUE_H
 #define SECONDMIILESTONE_MYPRIORITYQUEUE_H
 
-#define STATE State<double>
-
 #include <queue>
 #include "State.h"
 
 using namespace std;
 
-
+template <class T>
 class CompareState {
 public:
-    bool operator()(STATE cmp, STATE other) {
-        return cmp.getCost() > other.getCost();
+    bool operator()(State<T> *cmp, State<T>* other) {
+        return cmp->getCost() > other->getCost();
     }
 };
 
+template <class T>
 class MyPriorityQueue {
-    priority_queue<double, vector<STATE>, CompareState>  pq;
+    priority_queue<State<T>*, vector<State<T>*>, CompareState<T>>  pq;
 
 public:
-    void push(STATE state) {
+    void push(State<T>* state) {
         pq.push(state);
     }
 
-    STATE top() {
+    State<T>* top() {
         return pq.top();
     }
 
-    STATE pop() {
-        STATE temp = top();
+    State<T>* pop() {
+        State<T>* temp = top();
         pq.pop();
         return temp;
     }
@@ -46,7 +45,74 @@ public:
         return pq.size();
     }
 
-    void setState(State<pair<int, int>> s, double value);
+//    void setState(State<T>* state, double cost) {
+//        State<T>* tempState = find(State<T>);
+//        tempState->setCost(cost);
+//        push(tempState);
+//    }
+
+    State<T>* find(State<T>* state) {
+        vector<State<T>*> states;
+        State<T> *tempState;
+        State<T> *retState = nullptr;
+
+        // pop all states to a vector and checking if the state exists in pq
+        while (!empty()) {
+            tempState = pop();
+            states.push_back(tempState);
+            if (*tempState == *state) {
+                retState = tempState;
+                break;
+            }
+        }
+
+        // return all the states to pq
+        for (int i = 0; i < states.size(); ++i) {
+            push(states[i]);
+        }
+        return retState;
+    }
+
+    void erase(State<T>* state) {
+        vector<State<T>*> states;
+        State<T> *tempState;
+
+        // pop all states to a vector and checking if the state exists in pq
+        while (!empty()) {
+            tempState = pop();
+            if (*tempState == *state) {
+                break;
+            }
+            states.push_back(tempState);
+        }
+
+        // return all the states to pq
+        for (int i = 0; i < states.size(); ++i) {
+            push(states[i]);
+        }
+    }
+
+    bool isExist(State<T>* state) {
+        vector<State<T>*> states;
+        State<T> *tempState;
+        bool exist = false;
+
+        // pop all states to a vector and checking if the state exists in pq
+        while (!empty()) {
+            tempState = pop();
+            states.push_back(tempState);
+            if (*tempState == *state) {
+                exist = true;
+                break;
+            }
+        }
+
+        // return all the states to pq
+        for (int i = 0; i < states.size(); ++i) {
+            push(states[i]);
+        }
+        return exist;
+    }
 
 };
 
