@@ -17,17 +17,14 @@
 using namespace std;
 namespace server_side {
     class SearchSolver : public Solver<string, vector<vector<double >>> {
-        Searcher<pair<int, int>, vector<State<pair<int, int> > *>> *mySearcher;
     public:
-        SearchSolver(Searcher<pair<int, int>, vector<State<pair<int, int> > *>> * searcher ){
-           mySearcher=searcher;
-        }
+
         string solve(vector<vector<double >> p) {
-
+            Searcher<pair<int, int>, vector<State<pair<int, int> > *>> *searcher = new BFSSearcher<pair<int, int>>();
             Searchable<pair<int, int>> *searchable = new GraphSearchable(p);
-            vector<State<pair<int, int> > *> solution = mySearcher->search(searchable);
+            vector<State<pair<int, int> > *> solution = searcher->search(searchable);
 
-            if( solution.size()==0){
+            if (solution.size() == 0) {
                 return "-1";
             }
 
@@ -50,15 +47,24 @@ namespace server_side {
                     ans = ans + "Right";
                 }
 
+                delete (solution[i]);
                 if (i != solution.size() - 2) {
                     ans = ans + ",";
+                } else {
+                    delete (solution[i + 1]);
                 }
 
             }
+            delete (searcher);
+            delete (searchable);
 
             return ans;
         }
 
+        ~SearchSolver() {
+
+        }
     };
+
 }
 #endif //SECONDMIILESTONE_SEARCHSOLVER_H
