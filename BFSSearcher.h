@@ -76,10 +76,6 @@ public:
     }
 
 
-    int getNumOfNodesEvaluated() {
-        return this->numOfNodesEvaluated;
-    }
-
     void clearAll(vector<State<T> *> output) {
         State<T> *temp;
         while (!openList.empty()) {

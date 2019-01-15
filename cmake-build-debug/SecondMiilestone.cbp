@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="SecondMiilestone"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/vered/CLionProjects/SecondMileStone/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/vered/CLionProjects/SecondMileStone/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SecondMiilestone">
+				<Option output="/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/SecondMiilestone" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/vered/CLionProjects/SecondMileStone/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/Makefile&quot;  VERBOSE=1 SecondMiilestone"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SecondMiilestone/fast">
+				<Option output="/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/SecondMiilestone" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/vered/CLionProjects/SecondMileStone/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/Makefile&quot;  VERBOSE=1 SecondMiilestone/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/vered/CLionProjects/SecondMileStone/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/vered/CLionProjects/SecondMileStone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/BFSSearcher.cpp">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/BFSSearcher.h">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/CacheManager.h">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/ClientHandler.h">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/FileCacheManager.cpp">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/FileCacheManager.h">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/GraphSearchable.cpp">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/GraphSearchable.h">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/Main.h">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/MyClientHandler.cpp">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/MyClientHandler.h">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/MyParallelServer.cpp">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/MyParallelServer.h">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/MyPriorityQueue.cpp">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/MyPriorityQueue.h">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/MySerialServer.cpp">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/MySerialServer.h">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/MyTCPserver.cpp">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/MyTCPserver.h">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/MyTestClientHandler.cpp">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/MyTestClientHandler.h">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/PQSearcher.cpp">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/PQSearcher.h">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/SearchSolver.h">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/Searchable.h">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/Searcher.h">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/Server.h">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/Solver.h">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/State.h">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/StringReverse.h">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/main.cpp">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/testSolver.h">
+			<Option target="SecondMiilestone"/>
+		</Unit>
+		<Unit filename="/home/vered/CLionProjects/SecondMileStone/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
