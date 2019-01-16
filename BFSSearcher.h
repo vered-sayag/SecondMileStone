@@ -54,6 +54,8 @@ public:
 
                     // insert the successor to the closed list
                     queue.pushToClosed(successors[i]);
+                }else{
+                    delete (successors[i]);
                 }
             }
         }

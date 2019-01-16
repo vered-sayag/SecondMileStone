@@ -47,6 +47,8 @@ public:
                 for (int i = 0; i < successors.size(); ++i) {
                     stack.pushToOpen(successors[i]);
                 }
+            }else {
+                delete (processState);
             }
         }
         vector<State<T> *> emptyVector;
