@@ -92,7 +92,7 @@ vector<double> server_side::MyClientHandler::splitByComma(string str) {
     std::smatch m;
     while (regex_search(str, m, r)) {
         string s2 = m[0];
-        if (regex_match(s2, regex("^-1*$"))||regex_match(s2, regex("^\\d*[(\\d\\.\\d)\\d]\\d*$"))) {
+        if (regex_match(s2, regex("^\\s*-1\\s*$"))||regex_match(s2, regex("^\\s*\\d*[(\\d\\.\\d)\\d]\\d*\\s*$"))) {
             output.push_back(stod(s2));
         } else {
             throw invalid_argument("invalid matrix");

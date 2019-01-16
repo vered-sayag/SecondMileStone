@@ -23,13 +23,17 @@ namespace server_side {
     public:
 
         string solve(vector<vector<double >> p) {
-            Searcher<pair<int, int>, vector<State<pair<int, int> > *>> *searcher = new BFSSearcher<pair<int, int>>();
+            Searcher<pair<int, int>, vector<State<pair<int, int> > *>> *searcher = new AStarSearcher<pair<int, int>>();
             Searchable<pair<int, int>> *searchable = new MatrixSearchable(p);
             vector<State<pair<int, int> > *> solution = searcher->search(searchable);
+
+           // cout << searcher->getNumOfNodesEvaluated() << endl;
 
             if (solution.size() == 0) {
                 return "-1";
             }
+
+            //int cost = 0;
 
             string ans = "";
 
@@ -38,6 +42,7 @@ namespace server_side {
                 pair<int, int> thisState = solution[i]->getState();
                 pair<int, int> nextState = solution[i + 1]->getState();
 
+                //cost += p[thisState.first][thisState.second];
                 //}Right, Left, Down, Up }
 
                 if (thisState.first > nextState.first) {
@@ -54,11 +59,18 @@ namespace server_side {
                 if (i != solution.size() - 2) {
                     ans = ans + ",";
                 } else {
+                    //cost += p[nextState.first][nextState.second];
+
+                    //cout << cost << endl;
+
                     delete (solution[i + 1]);
                 }
 
             }
-            //cout<< searcher->getNumOfNodesEvaluated()<<endl;
+
+
+            //cout << ans << endl;
+
             delete (searcher);
             delete (searchable);
 
