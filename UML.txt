@@ -1,5 +1,5 @@
 	 ______________											 ___________________        
-	|    server    |										|	ClientHandler	|        
+	|    server    |										|	ClientHandler	|     
 	|______________|										|___________________|        
 open(int port,ClientHandler*) <>----------------------------|handleClient(int socket)        
 	|    stop()    |										|___________________|        
