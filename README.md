@@ -64,5 +64,5 @@ open(int port,ClientHandler*) <>----------------------------|handleClient(int so
 																										  |bool emptyClosed()	  |    
 													|---------------------------------------------------->|pushToOpen(State<T>*)  |    
 											________|________		____|____		 ____|____			  |pushToClosed(State<T>*)|    
-										   | PriorityQueueDB |	   | QueueDB |		| StackDB |			  |bool isInExistVector(State<T>*)    
+										   | PriorityQueueDB |	   | QueueDB |		| StackDB |			  |bool 					isInExistVector(State<T>*)    
 										   |_________________|	   |_________|		|_________|			  |_______________________|     
